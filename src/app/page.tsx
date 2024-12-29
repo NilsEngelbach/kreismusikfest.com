@@ -1,87 +1,83 @@
-"use client"
-
-import { useEffect, useState } from "react";
 import Image from "next/image";
+import Countdown from "./countdown";
 
 export default function Home() {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-
-  useEffect(() => {
-    const targetDate = new Date("2025-05-09T20:00:00").getTime();
-
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const difference = targetDate - now;
-
-      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-      setTimeLeft({ days, hours, minutes, seconds });
-    };
-
-    const interval = setInterval(updateCountdown, 1000);
-
-    updateCountdown();
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <main className="flex flex-col items-center justify-center h-full max-w-[800px] mx-auto p-8">
-      <div className="relative h-52 md:h-72 w-full">
-        <Image
-          src="/logo.svg"
-          alt="Kreismusikfest 2025"
-          fill={true}
-          style={{ objectFit: "cover" }}
-          priority
-        />
-      </div>
-      <div className="w-full rounded-2xl flex gap-9 flex-col items-center justify-center bg-cover bg-center">
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-center w-full gap-1.5">
-          <div className="rounded-xl bg-black/25 backdrop-blur-sm py-3 md:min-w-[96px] w-full flex items-center justify-center flex-col gap-1 px-3">
-            <h3 className="font-semibold text-2xl text-white text-center">
-              {timeLeft.days}
-            </h3>
-            <p className="text-lg uppercase font-normal text-white mt-1 text-center w-full">
-              Tage
-            </p>
+    <main>
+      {/* Highlights Section */}
+      <section className="bg-gray-50 p-4 md:p-6">
+        <h2 className="mb-6 text-center text-2xl font-semibold">Highlights</h2>
+
+        {/* Feature Box */}
+        <a className="cursor-pointer">
+          <div className="relative mb-6 w-full transform rounded-lg bg-white p-2 shadow-sm transition-transform hover:scale-105 md:p-4">
+            <Image
+              src="/blech-x-plosion.webp"
+              alt="Blech X-Plosion 2025"
+              width={1500}
+              height={844}
+              priority
+            />
           </div>
-          <div className="rounded-xl bg-black/25 backdrop-blur-sm py-3 md:min-w-[96px] w-full flex items-center justify-center flex-col gap-1 px-3">
-            <h3 className="font-semibold text-2xl text-white text-center">
-              {timeLeft.hours}
-            </h3>
-            <p className="text-lg uppercase font-normal text-white mt-1 text-center w-full">
-              Stunden
-            </p>
-          </div>
-          <div className="rounded-xl bg-black/25 backdrop-blur-sm py-3 md:min-w-[96px] w-full flex items-center justify-center flex-col gap-1 px-3">
-            <h3 className="font-semibold text-2xl text-white text-center">
-              {timeLeft.minutes}
-            </h3>
-            <p className="text-lg uppercase font-normal text-white mt-1 text-center w-full">
-              Minuten
-            </p>
-          </div>
-          <div className="rounded-xl bg-black/25 backdrop-blur-sm py-3 md:min-w-[96px] w-full flex items-center justify-center flex-col gap-1 px-3">
-            <h3 className="font-semibold text-2xl text-white text-center">
-              {timeLeft.seconds}
-            </h3>
-            <p className="text-lg uppercase font-normal text-white mt-1 text-center w-full">
-              Sekunden
-            </p>
-          </div>
+        </a>
+
+        <Countdown />
+
+        {/* Event Grid - Mobile: Stack, Desktop: 2 columns */}
+        <div className="mt-6 space-y-4 md:grid md:grid-cols-2 md:gap-6 md:space-y-0">
+          {[
+            "Freitag, 09.05.2025",
+            "Samstag, 10.05.2025",
+            "Sonntag, 11.05.2025",
+            "Montag, 12.05.2025",
+          ].map((date) => (
+            <div
+              key={date}
+              className="relative rounded-lg bg-white p-4 shadow-sm"
+            >
+              <div className="absolute -ml-[24px] -mt-[24px] inline-block rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white">
+                {date}
+              </div>
+              <div className="h-32">{/* Event content placeholder */}</div>
+            </div>
+          ))}
         </div>
-      </div>
+
+        <div className="mt-6 flex w-full items-center justify-center">
+          <button className="w-full rounded bg-orange-500 px-6 py-2 font-freeman text-white hover:bg-orange-600 md:w-auto">
+            Das komplette Programm
+          </button>
+        </div>
+      </section>
+
+      {/* Competition Section */}
+      <section className="border-t bg-white p-4 md:p-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="mb-2 text-lg">
+            Blasmusik Kreisverband Ludwigsburg e.V.
+          </h2>
+          <h3 className="mb-6 text-xl font-bold">Wertungsspiel</h3>
+          <button className="w-full rounded bg-orange-500 px-6 py-2 text-white hover:bg-orange-600 md:w-auto">
+            Informationen zum Wertungsspiel
+          </button>
+        </div>
+      </section>
+
+      {/* Anniversary Section */}
+      <section className="border-t bg-gray-50 p-4 md:p-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="mb-2 text-xl font-bold">Jubiläum 100 Jahre</h2>
+          <h3>Musikverein Schwieberdingen</h3>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="border-t bg-white p-4 md:p-6">
+        <h2 className="mb-6 text-center text-xl font-bold">Sponsoren</h2>
+        <div className="flex justify-center">
+          <div className="rounded bg-gray-50 p-4 shadow-sm">VR-Bank Logo</div>
+        </div>
+      </section>
     </main>
   );
 }
