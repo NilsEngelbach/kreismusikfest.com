@@ -69,7 +69,7 @@ export default function Navigation() {
         >
           <div className="space-y-1 px-2 pb-3 pt-2">
             {menuItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className={
@@ -79,7 +79,7 @@ export default function Navigation() {
                 }
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

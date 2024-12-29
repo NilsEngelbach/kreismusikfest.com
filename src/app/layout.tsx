@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "./navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +39,7 @@ export default function RootLayout({
                 {/* Logo */}
                 <div className="flex flex-col items-center">
                   <div className="relative h-36 w-full max-w-3xl md:h-72">
-                    <a href="/">
+                    <Link href="/">
                       <Image
                         src="/logo.svg"
                         alt="Kreismusikfest 2025"
@@ -46,7 +47,7 @@ export default function RootLayout({
                         style={{ objectFit: "contain" }}
                         priority
                       />
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="my-2 flex flex-col text-center font-freeman text-3xl text-orange-500 md:my-8 md:text-5xl lg:flex-row">
@@ -120,19 +121,19 @@ export default function RootLayout({
                 </div>
               </div>
               <div className="flex items-center justify-center bg-gray-900 p-2 text-sm">
-                <a
+                <Link
                   href="/impressum"
                   className="text-gray-400 hover:text-gray-200"
                 >
                   Impressum
-                </a>
+                </Link>
                 <span className="px-2 text-gray-500">|</span>
-                <a
+                <Link
                   href="/impressum#datenschutz"
                   className="text-gray-400 hover:text-gray-200"
                 >
                   Datenschutz
-                </a>
+                </Link>
               </div>
             </footer>
           </div>

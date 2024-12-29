@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Countdown from "./countdown";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <h2 className="mb-6 text-center text-2xl font-semibold">Highlights</h2>
 
         {/* Feature Box */}
-        <a className="cursor-pointer">
+        <Link href="/programm" className="cursor-pointer">
           <div className="relative mb-6 w-full transform rounded-lg bg-white p-2 shadow-sm transition-transform hover:scale-105 md:p-4">
             <Image
               src="/blech-x-plosion.webp"
@@ -19,7 +20,7 @@ export default function Home() {
               priority
             />
           </div>
-        </a>
+        </Link>
 
         <Countdown />
 
