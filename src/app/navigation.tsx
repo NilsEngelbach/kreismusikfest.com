@@ -13,6 +13,7 @@ export default function Navigation() {
   const menuItems = [
     { label: "Programm", href: "/programm", target: "_self" },
     { label: "Wertungsspiel", href: "/wertungsspiel", target: "_self" },
+    { label: "Festumzug", href: "/festumzug", target: "_self" },
     {
       label: "Tickets",
       href: "https://www.mv-schwieberdingen.de/tickets",

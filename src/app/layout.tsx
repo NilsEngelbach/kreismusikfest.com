@@ -16,8 +16,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kreismusikfest 2025",
-  description: "Kreismusikfest 2025",
+  title: "Kreismusikfest Ludwigsburg 2025",
+  description:
+    "Kreismusikfest Ludwigsburg 2025 | 09.12.05.2025 | Festplatz Schwieberdingen",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/favicon.png",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -68,10 +78,13 @@ export default function RootLayout({
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
                   <div>
                     <h3 className="mb-4 font-bold">Über Uns</h3>
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-row gap-4 md:flex-col">
                       {/* Logo placeholders */}
-                      <a href="https://www.bvbw-ludwigsburg.de" target="_blank">
-                        <div className="relative rounded bg-white p-4 shadow-sm">
+                      <div className="relative flex items-center rounded bg-white p-4 shadow-sm">
+                        <a
+                          href="https://www.bvbw-ludwigsburg.de"
+                          target="_blank"
+                        >
                           <Image
                             src="/kvlb-logo.svg"
                             alt="Blasmuik Kreisverband Ludwigsburg Logo"
@@ -79,13 +92,13 @@ export default function RootLayout({
                             height={871}
                             priority
                           />
-                        </div>
-                      </a>
-                      <a
-                        href="https://www.mv-schwieberdingen.de"
-                        target="_blank"
-                      >
-                        <div className="relative rounded bg-white p-4 shadow-sm">
+                        </a>
+                      </div>
+                      <div className="relative flex items-center rounded bg-white p-4 shadow-sm">
+                        <a
+                          href="https://www.mv-schwieberdingen.de"
+                          target="_blank"
+                        >
                           <Image
                             src="/mvs-logo-100.svg"
                             alt="100 Jahre Musikverein Schwieberdingen"
@@ -93,30 +106,66 @@ export default function RootLayout({
                             height={700}
                             priority
                           />
-                        </div>
-                      </a>
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <div>
                     <h3 className="mb-4 font-bold">Seiten</h3>
                     <ul className="space-y-2">
                       {[
-                        "Programm",
-                        "Wertungsspiel",
-                        "Tickets",
-                        "FAQ & Anfahrt",
-                        "Kontakt",
+                        {
+                          label: "Programm",
+                          href: "/programm",
+                          target: "_self",
+                        },
+                        {
+                          label: "Wertungsspiel",
+                          href: "/wertungsspiel",
+                          target: "_self",
+                        },
+                        {
+                          label: "Festumzug",
+                          href: "/festumzug",
+                          target: "_self",
+                        },
+                        {
+                          label: "Tickets",
+                          href: "https://www.mv-schwieberdingen.de/tickets",
+                          target: "_blank",
+                        },
+                        {
+                          label: "FAQ & Anfahrt",
+                          href: "/faq",
+                          target: "_self",
+                        },
+                        { label: "Kontakt", href: "/kontakt", target: "_self" },
                       ].map((item) => (
-                        <li key={item}>
-                          <a
-                            href="#"
-                            className="text-gray-600 hover:text-gray-900"
+                        <li key={item.label}>
+                          <Link
+                            href={item.href}
+                            target={item.target}
+                            className="text-gray-300 hover:text-orange-500"
                           >
-                            {item}
-                          </a>
+                            {item.label}
+                          </Link>
                         </li>
                       ))}
                     </ul>
+                  </div>
+                  <div className="md:col-span-2">
+                    <h3 className="mb-4 font-bold">Kreismusikfest 2025</h3>
+                    <p className="text-gray-300">
+                      Vom <b>09. bis 12.05.2025</b> veranstalten der{" "}
+                      <b>Blasmusik Kreisverband Ludwigsburg e.V.</b> und der{" "}
+                      <b>Musikverein Schwieberdingen e.V.</b> das{" "}
+                      <b>Kreismusikfest Ludwigsburg 2025</b> auf dem{" "}
+                      <b>Festplatz in Schwieberdingen</b>. Neben dem{" "}
+                      <b>Wertungsspiel</b> für Orchester gibt es an{" "}
+                      <b>4 Tagen ein buntes Programm</b> für Groß und Klein
+                      anlässlich des <b>100-jährigen Jubiläum</b> des
+                      Musikverein Schwieberdingen.
+                    </p>
                   </div>
                 </div>
               </div>
