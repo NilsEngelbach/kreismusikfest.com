@@ -8,6 +8,26 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Kreismusikfest 2025 | Programm",
+  description:
+    "Informationen rund um das 4-tägige Programm beim Kreismusikfest vom 09. bis 12. Mai 2025.",
+  alternates: { canonical: "https://kreismusikfest.com/programm" },
+  openGraph: {
+    title: "Kreismusikfest 2025 | Programm",
+    description:
+      "Informationen rund um das 4-tägige Programm beim Kreismusikfest vom 09. bis 12. Mai 2025.",
+    url: "https://kreismusikfest.com/programm",
+    images: [
+      {
+        url: "https://kreismusikfest.com/programm.png",
+        width: 1920,
+        height: 1358,
+      },
+    ],
+  },
+};
+
 export default function Programm() {
   const schedule = [
     {
@@ -94,13 +114,6 @@ export default function Programm() {
                 aus bekannten Hits, funkigen Eigenkompositionen und einer Show,
                 die Gänsehaut garantiert.
               </p>
-              <Link
-                href="https://www.mv-schwieberdingen.de/tickets"
-                target="_blank"
-                className="mb-2 block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-lg text-white hover:bg-orange-600"
-              >
-                Tickets
-              </Link>
             </>
           ),
         },

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kreismusikfest Ludwigsburg 2025",
   description:
-    "Kreismusikfest Ludwigsburg 2025 | 09.12.05.2025 | Festplatz Schwieberdingen",
+    "Kreismusikfest Ludwigsburg 2025 | 09. bis 12. Mai 2025 | Festplatz Schwieberdingen",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",

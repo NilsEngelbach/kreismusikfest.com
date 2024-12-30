@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kreismusikfest.com
+
+# Sitemaps
+Sitemap: https://kreismusikfest.com/sitemap.xml
