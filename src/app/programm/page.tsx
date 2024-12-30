@@ -127,8 +127,8 @@ export default function Programm() {
       ],
       additionalInfo: (
         <>
-          <div className="mt-2 px-2 text-sm text-gray-600">
-            Informationen zum Wertungsspiel findet ihr{" "}
+          <div className="mt-2 text-sm text-gray-600">
+            Informationen zum Wertungsspiel gibt es{" "}
             <Link
               className="underline hover:text-orange-500"
               href="/wertungsspiel"
@@ -158,8 +158,21 @@ export default function Programm() {
         { time: "17:30", title: "Musikverein Münchingen", description: "" },
         { time: "19:45", title: "Musikverein Unterriexingen", description: "" },
       ],
-      additionalInfo:
-        'Alle Informationen zum Festumzug\nAnreisen mit dem "Feurigen Elias"...',
+      additionalInfo: (
+        <>
+          <div className="mt-2 text-sm text-gray-600">
+            Am Sonntag historisch anreisen mit der{" "}
+            <Link
+              className="underline hover:text-orange-500"
+              href="https://www.ges-ev.de/museumsverkehr/kw/kw.htm"
+              target="_blank"
+            >
+              Dampflokomotive Feuriger Elias
+            </Link>
+            .
+          </div>
+        </>
+      ),
     },
     {
       date: "Montag, 12.05.2025",
@@ -185,10 +198,9 @@ export default function Programm() {
         },
         {
           time: "16:30",
-          title: "Liederorchester & Vororchester Schwieberdingen",
+          title: "Jugendorchester",
           description: "",
         },
-        { time: "17:15", title: "Jugendkapelle MVS", description: "" },
         { time: "18:00", title: "Musikverein Ditzingen", description: "" },
         { time: "20:30", title: "Showprogramm MVS", description: "" },
       ],
@@ -200,7 +212,7 @@ export default function Programm() {
       <h1 className="mb-2 mt-4 text-xl font-bold">
         Kreismusikfest - 4 Tage buntes Programm!
       </h1>
-      <p className="mb-6">
+      <p className="mb-8">
         Vom <b>09. bis 12. Mai 2025</b> erwartet euch ein unvergessliches
         Wochenende voller Highlights. Freut euch auf{" "}
         <b>Live-Musik mit tollen Bands und Orchestern</b>. Ob mit Freunden, der
@@ -209,7 +221,7 @@ export default function Programm() {
         Atmosphäre verzaubern!
       </p>
       {schedule.map((day, index) => (
-        <div key={day.date} className="mb-6">
+        <div key={day.date} className="mb-8">
           <div className="mb-2 flex items-center gap-4">
             <div className="rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white md:-ml-[16px]">
               {day.date}

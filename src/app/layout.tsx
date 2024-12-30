@@ -38,9 +38,9 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen min-w-[360px] antialiased`}
       >
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen min-w-[360px] bg-gray-100">
           {/* Container for boxed layout */}
           <div className="mx-auto flex min-h-screen max-w-7xl flex-col bg-white shadow-lg">
             {/* Header */}

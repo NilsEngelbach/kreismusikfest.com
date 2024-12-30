@@ -55,7 +55,7 @@ export default function Countdown() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-4 py-4 md:grid-cols-4">
+    <div className="mb-10 mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
       {timeUnits.map(({ value, label }) => (
         <div
           key={label}
