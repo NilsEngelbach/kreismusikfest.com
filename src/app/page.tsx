@@ -36,7 +36,7 @@ export default function Home() {
             <div className="flex flex-row items-center justify-center gap-2">
               <div className="relative flex-1 p-2">
                 <Image
-                  className="max-h-40 md:max-h-64"
+                  className="max-h-40 md:max-h-56"
                   alt="Blech X-Plosion 2025"
                   src="/blech-2.svg"
                   height={600}
@@ -210,11 +210,41 @@ export default function Home() {
 
       {/* Competition Section */}
       <section className="border-t bg-white p-4 md:p-6">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto text-center">
           <h2 className="mb-2 text-lg">
             Blasmusik Kreisverband Ludwigsburg e.V.
           </h2>
           <h3 className="mb-6 text-xl font-bold">Wertungsspiel</h3>
+          <div className="mb-4 flex w-full flex-col-reverse gap-4 text-justify md:flex-row">
+            <div className="flex-1">
+              <figure className="mb-4 md:mb-0">
+                <Image
+                  alt="Wertungsspiel"
+                  src="/orchestra.jpg"
+                  height={1000}
+                  width={667}
+                ></Image>
+              </figure>
+            </div>
+            <div className="flex-1">
+              <p className="mb-4">
+                Der <b>Blasmusik-Kreisverband Ludwigsburg</b> lädt herzlich zum{" "}
+                <b>Wertungsspiel am Samstag 10. Mai 2025</b> ein. Ziel des
+                Wertungsspiels ist es, den <b>musikalischen Austausch</b> zu
+                fördern, die <b>musikalische Qualität zu steigern</b> und den
+                teilnehmenden Ensembles wertvolle Rückmeldungen von erfahrenen
+                Fachjuroren zu geben. Das Wertungsspiel ist eine ausgezeichnete
+                Gelegenheit für alle Blasorchester, Jugendblasorchester,
+                Solisten, Ensembles und Bläserklassen, ihre Fähigkeiten unter
+                Beweis zu stellen, <b>neue Impulse zu erhalten</b> und sich mit
+                anderen <b>Blasmusikkapellen der Region zu messen</b>.
+              </p>
+              <p>
+                Das Wertungsspiel findet im <b>Widdumhof</b> in{" "}
+                <b>Korntal-Münchingen</b> statt.
+              </p>
+            </div>
+          </div>
           <Link
             href="/wertungsspiel"
             className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
@@ -226,9 +256,39 @@ export default function Home() {
 
       {/* Anniversary Section */}
       <section className="border-t bg-gray-50 p-4 md:p-6">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto text-center">
           <h2 className="mb-2 text-lg">Musikverein Schwieberdingen e.V.</h2>
           <h3 className="mb-6 text-xl font-bold">Jubiläum 100 Jahre</h3>
+
+          <div className="mb-4 flex flex-col gap-4 md:flex-row">
+            <div className="flex-1 text-justify">
+              <p className="mb-4">
+                Seit seiner <b>Gründung im Jahr 1925</b> hat der Musikverein
+                Schwieberdingen die lokale Kultur durch seine Musik bereichert
+                und Generationen von Musikliebhabern begeistert. Von festlichen
+                Konzerten bis hin zu stimmungsvollen Festen bedient der
+                Musikverein <b>alle Facetten der Blasmusik</b>.
+              </p>
+              <p className="mb-4">
+                Das kommende Jubiläum ist nicht nur eine Gelegenheit, auf eine{" "}
+                <b>reiche Geschichte zurückzublicken</b>, sondern auch ein
+                Moment des Stolzes und der Freude. Wir laden alle herzlich ein,
+                mit uns dieses{" "}
+                <b>bedeutende Jubiläum beim Kreismusikfest zu feiern</b>.
+              </p>
+            </div>
+            <div className="flex-1">
+              <figure>
+                <Image
+                  alt="Musikverein Schwieberdingen 100 Jahre"
+                  src="/MVS-100.png"
+                  height={1080}
+                  width={960}
+                ></Image>
+              </figure>
+            </div>
+          </div>
+
           <Link
             href="https://www.mv-schwieberdingen.de"
             target="_blank"

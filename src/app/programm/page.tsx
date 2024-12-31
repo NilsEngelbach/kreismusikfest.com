@@ -9,14 +9,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Kreismusikfest 2025 | Programm",
+  title: "Programm | Kreismusikfest 2025",
   description:
-    "Informationen rund um das 4-tägige Programm beim Kreismusikfest vom 09. bis 12. Mai 2025.",
+    "4 Tage abwechslungsreiches Programm beim Kreismusikfest vom 09. bis 12. Mai 2025",
   alternates: { canonical: "https://kreismusikfest.com/programm" },
   openGraph: {
-    title: "Kreismusikfest 2025 | Programm",
+    title: "Programm | Kreismusikfest 2025",
     description:
-      "Informationen rund um das 4-tägige Programm beim Kreismusikfest vom 09. bis 12. Mai 2025.",
+      "4 Tage abwechslungsreiches beim Kreismusikfest vom 09. bis 12. Mai 2025",
     url: "https://kreismusikfest.com/programm",
     images: [
       {

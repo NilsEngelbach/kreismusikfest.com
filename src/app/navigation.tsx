@@ -19,7 +19,7 @@ export default function Navigation() {
       href: "https://www.mv-schwieberdingen.de/tickets",
       target: "_blank",
     },
-    { label: "FAQ", href: "/faq", target: "_self" },
+    { label: "FAQ & Anfahrt", href: "/faq", target: "_self" },
     { label: "Kontakt", href: "/kontakt", target: "_self" },
   ];
 
