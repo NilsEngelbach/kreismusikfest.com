@@ -25,7 +25,10 @@ export default function Navigation() {
 
   return (
     <nav className="w-full bg-white">
-      <div onClick={() => setIsOpen(!isOpen)} className="mx-auto max-w-7xl">
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        className="mx-auto mt-4 max-w-7xl md:mt-0"
+      >
         {/* Top bar with logo and hamburger */}
         <div className="flex items-center justify-between md:justify-center">
           {/* Logo */}

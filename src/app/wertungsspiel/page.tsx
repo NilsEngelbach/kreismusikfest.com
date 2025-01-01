@@ -36,8 +36,7 @@ export default function Wertungsspiel() {
             Fachjuroren zu geben. Das Wertungsspiel ist eine ausgezeichnete
             Gelegenheit für alle Blasorchester, Jugendblasorchester, Solisten,
             Ensembles und Bläserklassen, ihre Fähigkeiten unter Beweis zu
-            stellen,
-            <b>neue Impulse zu erhalten</b> und sich mit anderen{" "}
+            stellen, <b>neue Impulse zu erhalten</b> und sich mit anderen{" "}
             <b>Blasmusikkapellen der Region zu messen</b>.
           </p>
           <p className="mb-4">
@@ -107,14 +106,14 @@ export default function Wertungsspiel() {
       <h3 className="mb-3 text-lg font-bold">Zuhören</h3>
       <p className="mb-6">
         Sobald der genaue Ablauf & Zeitplan feststeht stellen wir ihn hier für
-        euch bereit.
+        Euch bereit.
       </p>
       <h3 className="mb-3 text-lg font-bold">Kontakt</h3>
-      <p className="mb-4">
-        Bei Fragen wendet euch bitte an:
+      <div className="mb-4">
+        Bei Fragen wendet Euch bitte an:
         <ul className="mt-1">
           <li className="mb-2">
-            <p>
+            <span>
               <b>Erwin Gutmann</b>
               <br />
               <span className="text-gray-500">
@@ -122,10 +121,10 @@ export default function Wertungsspiel() {
               </span>
               <br />
               erwin.gutmann@kvlb.de
-            </p>
+            </span>
           </li>
           <li>
-            <p>
+            <span>
               <b>Birgit Schoppel</b>
               <br />
               <span className="text-gray-500">
@@ -133,10 +132,10 @@ export default function Wertungsspiel() {
               </span>
               <br />
               birgit.schoppel@kvlb.de
-            </p>
+            </span>
           </li>
         </ul>
-      </p>
+      </div>
     </div>
   );
 }

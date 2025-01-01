@@ -11,7 +11,7 @@ export default function Home() {
 
         {/* Feature Box */}
         <Link href="/programm" className="cursor-pointer">
-          <div className="relative w-full transform rounded-lg bg-white p-2 shadow-sm transition-transform hover:scale-105 md:mb-6 md:p-4">
+          <div className="relative w-full transform rounded-lg bg-white p-2 shadow-sm transition-transform md:mb-6 md:p-4 md:hover:scale-105">
             <Image
               src="/blech-x-plosion.webp"
               alt="Blech X-Plosion 2025"
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="mt-6 space-y-6 md:grid md:grid-cols-2 md:gap-6 md:space-y-0">
           <Link
             href="/programm"
-            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform hover:scale-105"
+            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform md:hover:scale-105"
           >
             <div className="absolute top-0 z-10 -ml-[16px] -mt-[16px] rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white">
               Freitag, 09.05.2025
@@ -48,7 +48,7 @@ export default function Home() {
 
           <Link
             href="/programm"
-            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform hover:scale-105"
+            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform md:hover:scale-105"
           >
             <div className="absolute top-0 z-10 -ml-[16px] -mt-[16px] rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white">
               Samstag, 10.05.2025
@@ -103,7 +103,7 @@ export default function Home() {
 
           <Link
             href="/programm"
-            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform hover:scale-105"
+            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform md:hover:scale-105"
           >
             <div className="absolute top-0 z-10 -ml-[16px] -mt-[16px] rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white">
               Sonntag, 11.05.2025
@@ -156,7 +156,7 @@ export default function Home() {
 
           <Link
             href="/programm"
-            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform hover:scale-105"
+            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform md:hover:scale-105"
           >
             <div className="absolute top-0 z-10 -ml-[16px] -mt-[16px] rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white">
               Montag, 12.05.2025
@@ -210,20 +210,25 @@ export default function Home() {
 
       {/* Competition Section */}
       <section className="border-t bg-white p-4 md:p-6">
-        <div className="mx-auto text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-2 text-lg">
             Blasmusik Kreisverband Ludwigsburg e.V.
           </h2>
           <h3 className="mb-6 text-xl font-bold">Wertungsspiel</h3>
-          <div className="mb-4 flex w-full flex-col-reverse gap-4 text-justify md:flex-row">
+          <div className="mb-4 flex w-full flex-col-reverse items-center gap-4 text-justify md:flex-row">
             <div className="flex-1">
-              <figure className="mb-4 md:mb-0">
-                <Image
-                  alt="Wertungsspiel"
-                  src="/orchestra.jpg"
-                  height={1000}
-                  width={667}
-                ></Image>
+              <figure className="mb-4 transform transition-transform md:mb-0 md:hover:scale-105">
+                <Link href="/wertungsspiel">
+                  <Image
+                    alt="Wertungsspiel"
+                    src="/orchestra.jpg"
+                    height={1000}
+                    width={667}
+                  ></Image>
+                </Link>
+                <figcaption className="text-center text-sm text-gray-600">
+                  Beim Wertungsspiel können sich die Kapellen messen
+                </figcaption>
               </figure>
             </div>
             <div className="flex-1">
@@ -256,11 +261,11 @@ export default function Home() {
 
       {/* Anniversary Section */}
       <section className="border-t bg-gray-50 p-4 md:p-6">
-        <div className="mx-auto text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-2 text-lg">Musikverein Schwieberdingen e.V.</h2>
           <h3 className="mb-6 text-xl font-bold">Jubiläum 100 Jahre</h3>
 
-          <div className="mb-4 flex flex-col gap-4 md:flex-row">
+          <div className="mb-4 flex flex-col items-center gap-4 md:flex-row">
             <div className="flex-1 text-justify">
               <p className="mb-4">
                 Seit seiner <b>Gründung im Jahr 1925</b> hat der Musikverein
@@ -269,7 +274,7 @@ export default function Home() {
                 Konzerten bis hin zu stimmungsvollen Festen bedient der
                 Musikverein <b>alle Facetten der Blasmusik</b>.
               </p>
-              <p className="mb-4">
+              <p>
                 Das kommende Jubiläum ist nicht nur eine Gelegenheit, auf eine{" "}
                 <b>reiche Geschichte zurückzublicken</b>, sondern auch ein
                 Moment des Stolzes und der Freude. Wir laden alle herzlich ein,
@@ -278,13 +283,19 @@ export default function Home() {
               </p>
             </div>
             <div className="flex-1">
-              <figure>
-                <Image
-                  alt="Musikverein Schwieberdingen 100 Jahre"
-                  src="/MVS-100.png"
-                  height={1080}
-                  width={960}
-                ></Image>
+              <figure className="transform transition-transform md:hover:scale-105">
+                <Link href="https://www.mv-schwieberdingen.de" target="_blank">
+                  <Image
+                    alt="Musikverein Schwieberdingen 100 Jahre"
+                    src="/MVS-100.png"
+                    height={1080}
+                    width={960}
+                  ></Image>
+                </Link>
+                <figcaption className="text-sm text-gray-600">
+                  Jugendkapelle, Blasorchester und Oldies des Musikverein
+                  Schwieberdingen
+                </figcaption>
               </figure>
             </div>
           </div>
@@ -300,10 +311,31 @@ export default function Home() {
       </section>
 
       {/* Sponsors Section */}
-      <section className="border-t bg-white p-4 md:p-6">
-        <h2 className="mb-6 text-center text-xl font-bold">Sponsoren</h2>
+      <section className="border-t bg-white p-4 text-center md:p-6">
+        <h2 className="mb-2 text-lg">Vielen Dank an alle</h2>
+        <h3 className="mb-6 text-xl font-bold">Sponsoren & Unterstützer</h3>
         <div className="flex justify-center">
-          <div className="rounded bg-gray-50 p-4 shadow-sm">VR-Bank Logo</div>
+          <div className="bg-white-50 transform rounded p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link
+              href="https://www.vrbank-lb.de/startseite.html"
+              target="_blank"
+            >
+              <Image
+                alt="VR-Bank Ludwigsburg"
+                src="/sponsoren/VR-Bank-Ludwigburg.jpg"
+                height={1303}
+                width={275}
+              ></Image>
+            </Link>
+          </div>
+        </div>
+        <div className="mx-auto mt-4 max-w-4xl text-center">
+          <Link
+            href="/kontakt"
+            className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
+          >
+            Sponsor werden
+          </Link>
         </div>
       </section>
     </main>

@@ -74,8 +74,8 @@ export default function RootLayout({
             <main className="flex-grow">{children}</main>
 
             <footer className="border-t bg-gray-800">
-              <div className="p-4 text-white md:p-6">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+              <div className="mx-auto max-w-4xl p-4 text-white md:p-6">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                   <div>
                     <h3 className="mb-4 font-bold">Über Uns</h3>
                     <div className="flex flex-row gap-4 md:flex-col">
@@ -153,7 +153,7 @@ export default function RootLayout({
                       ))}
                     </ul>
                   </div>
-                  <div className="md:col-span-2">
+                  <div>
                     <h3 className="mb-4 font-bold">Kreismusikfest 2025</h3>
                     <p className="text-gray-300">
                       Vom <b>09. bis 12.05.2025</b> veranstalten der{" "}
@@ -163,7 +163,7 @@ export default function RootLayout({
                       <b>Festplatz in Schwieberdingen</b>. Neben dem{" "}
                       <b>Wertungsspiel</b> für Orchester gibt es an{" "}
                       <b>4 Tagen ein buntes Programm</b> für Groß und Klein
-                      anlässlich des <b>100-jährigen Jubiläum</b> des
+                      anlässlich des <b>100-jährigen Jubiläums</b> des
                       Musikverein Schwieberdingen.
                     </p>
                   </div>

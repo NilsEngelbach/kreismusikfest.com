@@ -44,39 +44,13 @@ export default function Programm() {
           title: "Fättes Blech x DRUCKLUFT",
           description: (
             <>
-              <h2 className="text-lg font-bold">
-                Blech X-Plosion 2025: Das Brass-Event des Jahres in
-                Schwieberdingen
-              </h2>
-              <p className="mb-2 mt-2">
-                Die Blech X-Plosion bringt am 09.05.2025 auf dem Festplatz am
-                Bahnhof in Schwieberdingen zwei der angesagtesten Brassbands
-                Deutschlands im großen Festzelt auf die Bühne! Seid dabei, wenn
-                sich fetzige Blasmusik mit modernem Sound und mitreißender
-                Bühnenshow vereint.{" "}
-                <a
-                  className="underline"
-                  href="https://mv-schwieberdingen.de/tickets"
-                >
-                  Tickets sind im Vorverkauf für 29 Euro
-                </a>{" "}
-                (+ VVK-Gebühren) erhältlich – sichert Euch jetzt Euren Platz für
-                diesen besonderen Abend.
-              </p>
-              <Link
-                href="https://www.mv-schwieberdingen.de/tickets"
-                target="_blank"
-                className="mb-2 block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-lg text-white hover:bg-orange-600"
-              >
-                Tickets
-              </Link>
               <h3 className="mb-2 text-lg font-bold">
                 Druckluft: Brass-Power in Vollendung
               </h3>
               <figure>
                 <Image
                   src="/Druckluft.jpg"
-                  alt="Band"
+                  alt="Druckluft"
                   width={1024}
                   height={768}
                 />
@@ -97,7 +71,7 @@ export default function Programm() {
               <figure>
                 <Image
                   src="/Fättes-Blech.jpg"
-                  alt="Band"
+                  alt="Fättes Blech"
                   width={683}
                   height={1024}
                 />
@@ -118,6 +92,24 @@ export default function Programm() {
           ),
         },
       ],
+      description: (
+        <>
+          <h2 className="text-lg font-bold">
+            Blech X-Plosion 2025: Das Brass-Event des Jahres
+          </h2>
+          <p className="mb-2 mt-2">
+            Erlebt mit <b>Fättes Blech & Druckluft</b> zwei der angesagtesten
+            Brassbands Deutschlands auf der Bühne im großen Festzelt! Seid
+            dabei, wenn sich fetzige Blasmusik mit{" "}
+            <b>modernem Sound und mitreißender Bühnenshow</b> vereint.{" "}
+            <Link href="https://mv-schwieberdingen.de/tickets">
+              Tickets sind im Vorverkauf für 29 Euro
+            </Link>{" "}
+            (+ VVK-Gebühren) erhältlich – sichert Euch jetzt Euren Platz für
+            diesen besonderen Abend.
+          </p>
+        </>
+      ),
       additionalInfo: (
         <>
           <Link
@@ -134,9 +126,89 @@ export default function Programm() {
       date: "Samstag, 10.05.2025",
       ticketInfo: "Eintritt frei!",
       events: [
-        { time: "15:00", title: "Familiennachmittag", description: "" },
-        { time: "18:00", title: "Musikverein Ahausen", description: "" },
-        { time: "21:00", title: "Party mit Knutschfleck", description: "" },
+        {
+          time: "15:00",
+          title: "Familiennachmittag",
+          description: (
+            <>
+              <p>
+                Das genaue Programm für den Familiennachmittag wird rechtzeitig
+                vor dem Fest hier bekannt gegeben.
+              </p>
+            </>
+          ),
+        },
+        {
+          time: "18:00",
+          title: "Musikverein Ahausen",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/Ahausen.jpg"
+                  alt="Musikverein Ahausen"
+                  width={1920}
+                  height={1080}
+                />
+                <figcaption>© Musikverein Ahausen</figcaption>
+              </figure>
+              <p className="mt-2">
+                Der <b>Musikverein Ahausen</b> wurde bereits 1872 gegründet. Für
+                das Kreismusikfest reisen sie <b>extra vom Bodensee</b> nach
+                Schwieberdingen an, um das Publikum mit ihrer Musik zu
+                begeistern. Mit ihrer Leidenschaft für Blasmusik und einem
+                breiten Repertoire werden sie euch gut auf die anschließende
+                Party mit Knutschfleck einstimmen. Weitere Informationen gibt es
+                auf der Webseite{" "}
+                <Link
+                  href="https://mv-ahausen.de/"
+                  target="_blank"
+                  className="underline"
+                >
+                  https://mv-ahausen.de/
+                </Link>
+                .
+              </p>
+            </>
+          ),
+        },
+        {
+          time: "21:00",
+          title: "Party mit Knutschfleck",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/knutschfleck_3.jpg"
+                  alt="Knutschfleck"
+                  width={920}
+                  height={613}
+                />
+                <figcaption>© Musikverein Schwieberdingen</figcaption>
+              </figure>
+              <p className="my-4">
+                Seit vielen Jahren ist die Band Knutschfleck ein fester
+                Bestandteil des Musikfests in Schwieberdingen und begeistert das
+                Publikum jedes Mal aufs Neue. Mit ihrer einzigartigen Mischung
+                aus <b>Neuer Deutscher Welle (NDW) Hits</b> sorgen sie immer für
+                <b>großartige Partystimmung im Festzelt</b>. Ihre
+                energiegeladenen Auftritte und mitreißenden Showeinlagen
+                garantieren beste Unterhaltung für Jung und Alt. Freut euch auf
+                einen
+                <b>unvergesslichen Abend mit Knutschfleck</b>!
+              </p>
+              <figure>
+                <Image
+                  src="/knutschfleck_5.jpg"
+                  alt="Musikverein Ahausen"
+                  width={1920}
+                  height={1080}
+                />
+                <figcaption>© Musikverein Schwieberdingen</figcaption>
+              </figure>
+            </>
+          ),
+        },
       ],
       additionalInfo: (
         <>
@@ -223,14 +295,14 @@ export default function Programm() {
   return (
     <div className="mx-auto max-w-3xl p-4">
       <h1 className="mb-2 mt-4 text-xl font-bold">
-        Kreismusikfest - 4 Tage buntes Programm!
+        4 Tage abwechslungsreiches Programm!
       </h1>
       <p className="mb-8">
-        Vom <b>09. bis 12. Mai 2025</b> erwartet euch ein unvergessliches
-        Wochenende voller Highlights. Freut euch auf{" "}
+        Vom <b>09. bis 12. Mai 2025</b> erwartet Euch ein unvergessliches
+        Wochenende voller Highlights. Freut Euch auf{" "}
         <b>Live-Musik mit tollen Bands und Orchestern</b>. Ob mit Freunden, der
         Familie oder allein – unser <b>abwechslungsreiches Programm</b> bietet
-        für jeden etwas. Kommt vorbei und lasst euch von der mitreißenden
+        für jeden etwas. Kommt vorbei und lasst Euch von der mitreißenden
         Atmosphäre verzaubern!
       </p>
       {schedule.map((day, index) => (
@@ -241,6 +313,8 @@ export default function Programm() {
             </div>
             <div className="font-freeman text-orange-500">{day.ticketInfo}</div>
           </div>
+
+          {day.description}
 
           <Accordion
             type="single"
