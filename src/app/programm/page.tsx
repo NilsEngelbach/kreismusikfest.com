@@ -95,7 +95,7 @@ export default function Programm() {
       description: (
         <>
           <h2 className="text-lg font-bold">
-            Blech X-Plosion 2025: Das Brass-Event des Jahres
+            Blech X-Plosion: Das Brass-Event des Jahres
           </h2>
           <p className="mb-2 mt-2">
             Erlebt mit <b>Fättes Blech & Druckluft</b> zwei der angesagtesten
@@ -157,9 +157,9 @@ export default function Programm() {
                 das Kreismusikfest reisen sie <b>extra vom Bodensee</b> nach
                 Schwieberdingen an, um das Publikum mit ihrer Musik zu
                 begeistern. Mit ihrer Leidenschaft für Blasmusik und einem
-                breiten Repertoire werden sie euch gut auf die anschließende
+                breiten Repertoire werden sie euch bestens auf die anschließende
                 Party mit Knutschfleck einstimmen. Weitere Informationen gibt es
-                auf der Webseite{" "}
+                auf der Webseite:{" "}
                 <Link
                   href="https://mv-ahausen.de/"
                   target="_blank"
@@ -184,7 +184,7 @@ export default function Programm() {
                   width={920}
                   height={613}
                 />
-                <figcaption>© Musikverein Schwieberdingen</figcaption>
+                <figcaption>Knutschfleck in Action</figcaption>
               </figure>
               <p className="my-4">
                 Seit vielen Jahren ist die Band Knutschfleck ein fester
@@ -200,11 +200,11 @@ export default function Programm() {
               <figure>
                 <Image
                   src="/knutschfleck_5.jpg"
-                  alt="Musikverein Ahausen"
+                  alt="Knutschfleck"
                   width={1920}
                   height={1080}
                 />
-                <figcaption>© Musikverein Schwieberdingen</figcaption>
+                <figcaption>Partystimmung Jung und Alt</figcaption>
               </figure>
             </>
           ),
@@ -232,16 +232,171 @@ export default function Programm() {
         {
           time: "11:00",
           title: "Muttertagskonzert der Jugendorchester",
-          description: "",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/Muttertagskonzert.jpg"
+                  alt="Muttertagskonzert"
+                  width={1080}
+                  height={720}
+                />
+                <figcaption>Muttertagskonzerts der Jugendkapelle</figcaption>
+              </figure>
+              <p className="mt-4">
+                Das <b>Lieder- und Vororchester</b> der Musikschule
+                Schwieberdingen sowie die <b>Jugendkapelle</b> des Musikvereins
+                Schwieberdingen ihren Müttern auf musikalische Weise danken.
+                Freuen Sie sich auf ein stimmungsvolles und herzergreifendes
+                Programm, das die <b>Liebe und Wertschätzung für die Mütter</b>{" "}
+                in den Mittelpunkt stellt.
+              </p>
+            </>
+          ),
         },
         {
           time: "14:00",
           title: "Festumzug durch Schwieberdingen",
-          description: "",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/festumzug.jpeg"
+                  alt="Festumzug"
+                  width={1080}
+                  height={810}
+                />
+                <figcaption>
+                  Zahlreiche Kapellen werden beim Festumzug teilnehmen
+                </figcaption>
+              </figure>
+              <p className="my-4">
+                Mit einem <b>großen Festumzug</b> durch Schwieberdingen feiern
+                wir das <b>100-jährige Jubiläum</b> des Musikverein
+                Schwieberdingen. Zahlreiche <b>Kapellen und Vereine</b> werden
+                am Festumzug teilnehmen. Ziel des Festumzugs ist das{" "}
+                <b>Kreismusikfest im Festzelt auf dem Festplatz</b> am Bahnhof.
+              </p>
+              <figure>
+                <Image
+                  src="/festumzug_2.jpg"
+                  alt="Festumzug"
+                  width={751}
+                  height={500}
+                />
+                <figcaption>
+                  Die Oldies beim Festumzug zum 90-jährigen Jubiläum
+                </figcaption>
+              </figure>
+              <Link
+                href="/festumzug"
+                className="mb-6 mt-2 block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-lg text-white hover:bg-orange-600"
+              >
+                Informationen zum Festumzug
+              </Link>
+            </>
+          ),
         },
-        { time: "15:15", title: "Musikverein Kleinglattbach", description: "" },
-        { time: "17:30", title: "Musikverein Münchingen", description: "" },
-        { time: "19:45", title: "Musikverein Unterriexingen", description: "" },
+        {
+          time: "15:15",
+          title: "Musikverein Kleinglattbach",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/Kleinglattbach.jpg"
+                  alt="Musikverein Kleinglattbach"
+                  width={1920}
+                  height={1282}
+                />
+                <figcaption>© Musikverein Kleinglattbach</figcaption>
+              </figure>
+              <p className="mt-4">
+                Mit rund <b>55 Musikerinnen und Musikern</b> und unter der
+                musikalischen Leitung ihres Dirigenten Julian Metzger
+                präsentieren sie ein <b>beeindruckendes Repertoire</b>, das von
+                traditioneller Blasmusik über abwechslungsreiche
+                Unterhaltungsmusik bis hin zur sinfonischen/konzertanten
+                Blasmusik reicht. Das Orchester ist bekannt für seine
+                musikalische Vielfalt und seinen mitreißenden Spielstil, der das
+                Publikum begeistert. Besuchen Sie die Webseite des Musikvereins
+                Kleinglattbach für weitere Informationen:{" "}
+                <Link
+                  className="underline"
+                  href="https://www.mvkleinglattbach.de/"
+                  target="_blank"
+                >
+                  https://www.mvkleinglattbach.de/
+                </Link>
+                .
+              </p>
+            </>
+          ),
+        },
+        {
+          time: "17:30",
+          title: "Musikverein Münchingen",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/Muenchingen_2.jpg"
+                  alt="Musikverein Münchingen"
+                  width={2000}
+                  height={700}
+                />
+                <figcaption>© Musikverein Münchingen</figcaption>
+              </figure>
+              <p className="mt-4">
+                Der <b>Musikverein Münchingen</b> e.V. feierte 2020 sein
+                100-jähriges Jubiläum und ist seit seiner Gründung im Jahr 1920
+                ein fester Bestandteil des kulturellen Lebens der Region. Die
+                engagierten Musiker präsentieren ein abwechslungsreiches
+                Programm, das sowohl Tradition als auch Innovation
+                widerspiegelt. Mehr Informationen gibt es auf der Webseite:{" "}
+                <Link
+                  className="underline"
+                  href="https://www.musikverein-muenchingen.de/"
+                  target="_blank"
+                >
+                  https://www.musikverein-muenchingen.de/
+                </Link>
+                .
+              </p>
+            </>
+          ),
+        },
+        {
+          time: "19:45",
+          title: "Musikverein Unterriexingen",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/Unterriexingen.jpg"
+                  alt="Musikverein Unterriexingen"
+                  width={1110}
+                  height={500}
+                />
+                <figcaption>© Musikverein Unterriexingen</figcaption>
+              </figure>
+              <p className="mt-4">
+                Mit einem Ensemble von fast <b>50 Musikern</b> wird das
+                Blasorchester unter der Leitung von Dirigent Hermann Röser ein
+                abwechslungsreiches Programm präsentieren, das von klassischen
+                Marschstücken bis hin zu modernen Arrangements reicht. Auf der
+                Webseite gibt es noch weitere Informationen:{" "}
+                <Link
+                  className="underline"
+                  href="https://mv-unterriexingen.de/"
+                  target="_blank"
+                >
+                  https://mv-unterriexingen.de/
+                </Link>
+              </p>
+            </>
+          ),
+        },
       ],
       additionalInfo: (
         <>
