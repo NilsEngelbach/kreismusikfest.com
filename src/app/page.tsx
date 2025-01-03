@@ -338,6 +338,133 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Anniversary Section */}
+      <section className="border-t bg-gray-50 p-4 text-center md:p-6">
+        <h2 className="mb-2 text-lg">Über 30 Stunden Live Musik</h2>
+        <h3 className="mb-6 text-xl font-bold">Auf der Bühne & Festumzug</h3>
+
+        <div className="grid-col-2 mx-auto mb-4 grid max-w-4xl justify-center gap-4 md:grid-cols-4">
+          <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Fättes Blech"
+                src="/logos/Fättes-blech.png"
+                width={1136}
+                height={403}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Druckluft"
+                src="/logos/Druckluft.png"
+                width={3326}
+                height={1239}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Musikverein Ahausen"
+                src="/logos/MV-Ahausen.png"
+                width={3375}
+                height={1312}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Knutschfleck"
+                src="/logos/Knutschfleck.png"
+                width={1209}
+                height={422}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Musikschule Schwieberdingen"
+                src="/logos/Musikschule.jpg"
+                width={300}
+                height={199}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Musikverein Kleinglattbach"
+                src="/logos/MV-Kleinglattbach.jpg"
+                width={640}
+                height={214}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Musikverein Münchingen"
+                src="/logos/MV-Münchingen.webp"
+                width={350}
+                height={190}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Musikverein Unterriexingen"
+                src="/logos/MV-Unterriexingen.png"
+                width={143}
+                height={55}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Musikverein Ditzingen"
+                src="/logos/MV-Ditzingen.gif"
+                width={591}
+                height={591}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Musikverein Schwieberdingen"
+                src="/logos/MV-Schwieberdingen.png"
+                width={500}
+                height={141}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+        </div>
+        <div className="mx-auto mt-4 max-w-4xl text-center">
+          <Link
+            href="/programm"
+            className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
+          >
+            Das komplette Programm
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }

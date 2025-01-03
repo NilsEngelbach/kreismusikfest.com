@@ -120,6 +120,10 @@ export default function Wertungsspiel() {
                 Leiter Geschäftsbereich Musik
               </span>
               <br />
+              <span className="text-gray-500">
+                Blasmusik Kreisverband Ludwigsburg e.V.
+              </span>
+              <br />
               erwin.gutmann@kvlb.de
             </span>
           </li>
@@ -129,6 +133,10 @@ export default function Wertungsspiel() {
               <br />
               <span className="text-gray-500">
                 Leiterin Geschäftsbereich Musikorganisation
+              </span>
+              <br />
+              <span className="text-gray-500">
+                Blasmusik Kreisverband Ludwigsburg e.V.
               </span>
               <br />
               birgit.schoppel@kvlb.de

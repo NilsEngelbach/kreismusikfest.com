@@ -157,7 +157,7 @@ export default function Programm() {
                 das Kreismusikfest reisen sie <b>extra vom Bodensee</b> nach
                 Schwieberdingen an, um das Publikum mit ihrer Musik zu
                 begeistern. Mit ihrer Leidenschaft für Blasmusik und einem
-                breiten Repertoire werden sie euch bestens auf die anschließende
+                breiten Repertoire werden sie Euch bestens auf die anschließende
                 Party mit Knutschfleck einstimmen. Weitere Informationen gibt es
                 auf der Webseite:{" "}
                 <Link
@@ -193,7 +193,7 @@ export default function Programm() {
                 aus <b>Neuer Deutscher Welle (NDW) Hits</b> sorgen sie immer für
                 <b>großartige Partystimmung im Festzelt</b>. Ihre
                 energiegeladenen Auftritte und mitreißenden Showeinlagen
-                garantieren beste Unterhaltung für Jung und Alt. Freut euch auf
+                garantieren beste Unterhaltung für Jung und Alt. Freut Euch auf
                 einen
                 <b>unvergesslichen Abend mit Knutschfleck</b>!
               </p>
@@ -247,7 +247,7 @@ export default function Programm() {
                 Das <b>Lieder- und Vororchester</b> der Musikschule
                 Schwieberdingen sowie die <b>Jugendkapelle</b> des Musikvereins
                 Schwieberdingen wollen ihren Müttern auf musikalische Weise
-                danken. Freut euch auf ein stimmungsvolles und herzergreifendes
+                danken. Freut Euch auf ein stimmungsvolles und herzergreifendes
                 Programm, das die <b>Liebe und Wertschätzung für die Mütter</b>{" "}
                 in den Mittelpunkt stellt.
               </p>
@@ -315,7 +315,7 @@ export default function Programm() {
               <p className="mt-4">
                 Mit rund <b>55 Musikerinnen und Musikern</b> und unter der
                 musikalischen Leitung ihres Dirigenten Julian Metzger
-                präsentieren euch ein <b>beeindruckendes Repertoire</b>, das von
+                präsentieren Euch ein <b>beeindruckendes Repertoire</b>, das von
                 traditioneller Blasmusik über abwechslungsreiche
                 Unterhaltungsmusik bis hin zur sinfonischen/konzertanten
                 Blasmusik reicht. Das Orchester ist bekannt für seine
