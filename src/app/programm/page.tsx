@@ -571,7 +571,7 @@ export default function Programm() {
       <h1 className="mb-2 mt-4 text-xl font-bold">
         4 Tage abwechslungsreiches Programm!
       </h1>
-      <p className="mb-8">
+      <p className="mb-4">
         Vom <b>09. bis 12. Mai 2025</b> erwartet Euch ein unvergessliches
         Wochenende voller Highlights. Freut Euch auf{" "}
         <b>Live-Musik mit tollen Bands und Orchestern</b>. Ob mit Freunden, der
@@ -579,6 +579,50 @@ export default function Programm() {
         für jeden etwas. Kommt vorbei und lasst Euch von der mitreißenden
         Atmosphäre verzaubern!
       </p>
+      <div>
+        <div className="grid-cols-2 mx-auto mb-8 grid max-w-4xl justify-center gap-4 md:grid-cols-4">
+          <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+            <Image
+              className="rounded"
+              alt="Musikfest"
+              src="/Musikfest-1.jpg"
+              width={1080}
+              height={720}
+              style={{ objectFit: "contain" }}
+            ></Image>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+            <Image
+              className="rounded"
+              alt="Musikfest"
+              src="/Musikfest-2.jpg"
+              width={1080}
+              height={720}
+              style={{ objectFit: "contain" }}
+            ></Image>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+            <Image
+              className="rounded"
+              alt="Musikfest"
+              src="/Musikfest-6.jpg"
+              width={720}
+              height={500}
+              style={{ objectFit: "contain" }}
+            ></Image>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+            <Image
+              className="rounded"
+              alt="Musikfest"
+              src="/Musikfest-4.jpg"
+              width={1080}
+              height={720}
+              style={{ objectFit: "contain" }}
+            ></Image>
+          </div>
+        </div>
+      </div>
       {schedule.map((day, index) => (
         <div key={day.date} className="mb-8">
           <div className="mb-2 flex items-center gap-4">
