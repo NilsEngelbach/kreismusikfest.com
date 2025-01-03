@@ -344,7 +344,7 @@ export default function Home() {
         <h2 className="mb-2 text-lg">Über 30 Stunden Live Musik</h2>
         <h3 className="mb-6 text-xl font-bold">Auf der Bühne & Festumzug</h3>
 
-        <div className="grid-cols-2 mx-auto mb-4 grid max-w-4xl justify-center gap-4 md:grid-cols-4">
+        <div className="mx-auto mb-4 grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
           <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
             <Link href="/programm">
               <Image

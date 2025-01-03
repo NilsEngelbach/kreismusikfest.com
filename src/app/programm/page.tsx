@@ -580,7 +580,7 @@ export default function Programm() {
         Atmosphäre verzaubern!
       </p>
       <div>
-        <div className="grid-cols-2 mx-auto mb-8 grid max-w-4xl justify-center gap-4 md:grid-cols-4">
+        <div className="mx-auto mb-8 grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
           <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
             <Image
               className="rounded"

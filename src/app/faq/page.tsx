@@ -30,7 +30,14 @@ export default function Programm() {
   const faqs = [
     {
       question: "Kostet das Kreismusikfest Eintritt?",
-      answer: <><p>Am Freitag, 09.05.2025 kostet ein Ticket 29€. Am Samstag, Sonntag und Montag (10.05. bis 12.05.) ist der Eintritt frei.</p></>,
+      answer: (
+        <>
+          <p>
+            Am Freitag, 09.05.2025 kostet ein Ticket 29€. Am Samstag, Sonntag
+            und Montag (10.05. bis 12.05.) ist der Eintritt frei.
+          </p>
+        </>
+      ),
     },
   ];
 
@@ -38,10 +45,12 @@ export default function Programm() {
     <div className="mx-auto max-w-4xl p-4">
       <h1 className="mb-4 mt-4 text-xl font-bold">FAQs</h1>
       <p className="mb-4">
-        Um Euch den <b>bestmöglichen Aufenthalt und eine reibungslosen Besuch</b> an
-        unserem Fest zu gewährleisten, haben wir eine Liste der <b>häufigsten
-        Fragen und Antworten</b> zusammengestellt. Sollten Ihr dennoch weitere Fragen haben, stehen wir Euch
-        selbstverständlich gerne zur Verfügung.
+        Um Euch den{" "}
+        <b>bestmöglichen Aufenthalt und eine reibungslosen Besuch</b> an unserem
+        Fest zu gewährleisten, haben wir eine Liste der{" "}
+        <b>häufigsten Fragen und Antworten</b> zusammengestellt. Sollten Ihr
+        dennoch weitere Fragen haben, stehen wir Euch selbstverständlich gerne
+        zur Verfügung.
       </p>
       <Accordion type="single" collapsible className="rounded-md bg-gray-100">
         {faqs.map((faq, faqIndex) => (
@@ -63,7 +72,10 @@ export default function Programm() {
       </Accordion>
 
       <h1 className="mb-4 mt-4 text-xl font-bold">Anfahrt & Parken</h1>
-      <p>Hier werden wir Euch noch rechtzeitig vor dem Fest über die Anfahrt und Parkmöglichkeiten informieren.</p>
+      <p>
+        Hier werden wir Euch noch rechtzeitig vor dem Fest über die Anfahrt und
+        Parkmöglichkeiten informieren.
+      </p>
     </div>
   );
 }
