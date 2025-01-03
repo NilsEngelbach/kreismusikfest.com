@@ -349,7 +349,7 @@ export default function Home() {
             <Link href="/programm">
               <Image
                 alt="Fättes Blech"
-                src="/logos/Fättes-blech.png"
+                src="/logos/Fättes-Blech.png"
                 width={1136}
                 height={403}
                 style={{ objectFit: "contain" }}
