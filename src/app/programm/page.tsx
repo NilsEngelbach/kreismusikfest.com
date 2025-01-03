@@ -246,8 +246,8 @@ export default function Programm() {
               <p className="mt-4">
                 Das <b>Lieder- und Vororchester</b> der Musikschule
                 Schwieberdingen sowie die <b>Jugendkapelle</b> des Musikvereins
-                Schwieberdingen ihren Müttern auf musikalische Weise danken.
-                Freuen Sie sich auf ein stimmungsvolles und herzergreifendes
+                Schwieberdingen wollen ihren Müttern auf musikalische Weise
+                danken. Freut euch auf ein stimmungsvolles und herzergreifendes
                 Programm, das die <b>Liebe und Wertschätzung für die Mütter</b>{" "}
                 in den Mittelpunkt stellt.
               </p>
@@ -267,7 +267,8 @@ export default function Programm() {
                   height={810}
                 />
                 <figcaption>
-                  Zahlreiche Kapellen werden beim Festumzug teilnehmen
+                  Zahlreiche Kapellen und Vereine werden beim Festumzug
+                  teilnehmen
                 </figcaption>
               </figure>
               <p className="my-4">
@@ -314,12 +315,12 @@ export default function Programm() {
               <p className="mt-4">
                 Mit rund <b>55 Musikerinnen und Musikern</b> und unter der
                 musikalischen Leitung ihres Dirigenten Julian Metzger
-                präsentieren sie ein <b>beeindruckendes Repertoire</b>, das von
+                präsentieren euch ein <b>beeindruckendes Repertoire</b>, das von
                 traditioneller Blasmusik über abwechslungsreiche
                 Unterhaltungsmusik bis hin zur sinfonischen/konzertanten
                 Blasmusik reicht. Das Orchester ist bekannt für seine
                 musikalische Vielfalt und seinen mitreißenden Spielstil, der das
-                Publikum begeistert. Besuchen Sie die Webseite des Musikvereins
+                Publikum begeistert. Besucht die Webseite des Musikvereins
                 Kleinglattbach für weitere Informationen:{" "}
                 <Link
                   className="underline"
@@ -385,7 +386,7 @@ export default function Programm() {
                 Blasorchester unter der Leitung von Dirigent Hermann Röser ein
                 abwechslungsreiches Programm präsentieren, das von klassischen
                 Marschstücken bis hin zu modernen Arrangements reicht. Auf der
-                Webseite gibt es noch weitere Informationen:{" "}
+                Webseite gibt es weitere Informationen:{" "}
                 <Link
                   className="underline"
                   href="https://mv-unterriexingen.de/"
@@ -421,7 +422,39 @@ export default function Programm() {
         {
           time: "11:30",
           title: "Mittagstisch mit den Oldies",
-          description: "",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/mittagstisch.jpg"
+                  alt="Mittagstisch mit den Oldies"
+                  width={920}
+                  height={613}
+                />
+                <figcaption>
+                  Die Oldies unterhalten die Gäste beim Mittagstisch
+                </figcaption>
+              </figure>
+              <p className="my-4">
+                Beim Mittagstisch kann man <b>sparen und genießen</b> bei bester
+                Unterhaltung von den Oldies des Musikverein Schwieberdingen.
+                Neben Fleischbrot und Göckele vom Holzkohlengrill gibt es ein
+                großes Angebot an Speisen und Getränken. Die <b>Angebote</b>{" "}
+                werden noch rechtzeitig vor dem Fest bekanntgegeben.
+              </p>
+              <figure>
+                <Image
+                  src="/Mittagstisch_3.jpg"
+                  alt="Fleischbrot vom Holzkohlengrill"
+                  width={700}
+                  height={467}
+                />
+                <figcaption>
+                  Das Highlight: Fleischbrot und Göckele vom Holzkohlengrill
+                </figcaption>
+              </figure>
+            </>
+          ),
         },
         {
           time: "13:30",
@@ -439,10 +472,96 @@ export default function Programm() {
         {
           time: "16:30",
           title: "Jugendorchester",
-          description: "",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/Muttertagskonzert.jpg"
+                  alt="Jugendkapelle"
+                  width={1080}
+                  height={720}
+                />
+                <figcaption>
+                  Die Jugendkapelle des Musikverein Schwieberdingen
+                </figcaption>
+              </figure>
+              <p className="mt-4">
+                Das <b>Lieder- und Vororchester</b> der Musikschule
+                Schwieberdingen sowie die <b>Jugendkapelle</b> des Musikvereins
+                Schwieberdingen eröffnen den letzten Nachmittag am
+                Kreismusikfest.
+              </p>
+            </>
+          ),
         },
-        { time: "18:00", title: "Musikverein Ditzingen", description: "" },
-        { time: "20:30", title: "Showprogramm MVS", description: "" },
+        {
+          time: "18:00",
+          title: "Musikverein Ditzingen",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/Ditzingen.jpg"
+                  alt="Musikverein Ditzingen"
+                  width={2675}
+                  height={950}
+                />
+                <figcaption>© Musikverein Ditzingen</figcaption>
+              </figure>
+              <p className="mt-4">
+                Die Stadtkapelle des Musikverein Ditzingen besteht aus etwas
+                mehr als <b>60 Musikerinnen und Musikern</b>. Das Repertoire der
+                Stadtkapelle ist vielfältig und erstreckt sich von{" "}
+                <b>böhmisch-mährischer Blasmusik</b> über sinfonische Blasmusik
+                bis hin zu <b>Pop und Rock</b>. Auf der Webseite findet ihr
+                weitere Informationen:{" "}
+                <Link
+                  className="underline"
+                  href="https://mv-ditzingen.de/"
+                  target="_blank"
+                >
+                  https://mv-ditzingen.de/
+                </Link>
+              </p>
+            </>
+          ),
+        },
+        {
+          time: "20:30",
+          title: "Showprogramm MVS",
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/Montag.jpg"
+                  alt="Montagabend Showprogramm"
+                  width={1080}
+                  height={720}
+                />
+                <figcaption>
+                  Voller Einsatz beim Montagabend Showprogramm
+                </figcaption>
+              </figure>
+              <p className="my-4">
+                Das Montagabend Showprogramm ist immer der{" "}
+                <b>krönende Abschluss</b> des Musikfests in Schwieberdingen. Mit{" "}
+                <b>Tanzeinlagen, Spielen</b> und einem <b>bunten Partymix</b>{" "}
+                für Jung und Alt feiern wir gemeinsam.
+              </p>
+              <figure>
+                <Image
+                  src="/Montag_2.jpg"
+                  alt="Montagabend Showprogramm"
+                  width={1080}
+                  height={810}
+                />
+                <figcaption>
+                  Das ganze Zelt feiert zum Abschluss zusammen
+                </figcaption>
+              </figure>
+            </>
+          ),
+        },
       ],
     },
   ];
