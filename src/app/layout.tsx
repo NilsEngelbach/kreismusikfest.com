@@ -139,7 +139,11 @@ export default function RootLayout({
                           href: "/faq",
                           target: "_self",
                         },
-                        { label: "Kontakt", href: "/kontakt", target: "_self" },
+                        {
+                          label: "Kontakt & Helfen",
+                          href: "/kontakt",
+                          target: "_self",
+                        },
                       ].map((item) => (
                         <li key={item.label}>
                           <Link

@@ -20,7 +20,7 @@ export default function Navigation() {
       target: "_blank",
     },
     { label: "FAQ & Anfahrt", href: "/faq", target: "_self" },
-    { label: "Kontakt", href: "/kontakt", target: "_self" },
+    { label: "Kontakt & Helfen", href: "/kontakt", target: "_self" },
   ];
 
   return (

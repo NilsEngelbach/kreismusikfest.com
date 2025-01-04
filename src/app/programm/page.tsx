@@ -204,7 +204,7 @@ export default function Programm() {
                   width={1920}
                   height={1080}
                 />
-                <figcaption>Partystimmung Jung und Alt</figcaption>
+                <figcaption>Partystimmung für Jung und Alt</figcaption>
               </figure>
             </>
           ),
@@ -241,7 +241,7 @@ export default function Programm() {
                   width={1080}
                   height={720}
                 />
-                <figcaption>Muttertagskonzerts der Jugendkapelle</figcaption>
+                <figcaption>Muttertagskonzert der Jugendkapelle</figcaption>
               </figure>
               <p className="mt-4">
                 Das <b>Lieder- und Vororchester</b> der Musikschule
@@ -482,7 +482,7 @@ export default function Programm() {
                   height={720}
                 />
                 <figcaption>
-                  Die Jugendkapelle des Musikverein Schwieberdingen
+                  Jugendkapelle des Musikverein Schwieberdingen
                 </figcaption>
               </figure>
               <p className="mt-4">
@@ -665,6 +665,48 @@ export default function Programm() {
         Der <b>Blasmusik Kreisverband Ludwigsburg e.V.</b> und der{" "}
         <b>Musikverein Schwieberdingen e.V.</b> freuen sich auf euren Besuch.
       </p>
+      <div className="mx-auto mb-6 grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
+        <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+          <Image
+            className="rounded"
+            alt="Musikfest"
+            src="/Musikfest-3.jpg"
+            width={1080}
+            height={720}
+            style={{ objectFit: "contain" }}
+          ></Image>
+        </div>
+        <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+          <Image
+            className="rounded"
+            alt="Musikfest"
+            src="/Musikfest-9.jpg"
+            width={1080}
+            height={720}
+            style={{ objectFit: "contain" }}
+          ></Image>
+        </div>
+        <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+          <Image
+            className="rounded"
+            alt="Musikfest"
+            src="/Musikfest-7.jpg"
+            width={920}
+            height={613}
+            style={{ objectFit: "contain" }}
+          ></Image>
+        </div>
+        <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+          <Image
+            className="rounded"
+            alt="Musikfest"
+            src="/Musikfest-8.jpg"
+            width={1080}
+            height={720}
+            style={{ objectFit: "contain" }}
+          ></Image>
+        </div>
+      </div>
     </div>
   );
 }

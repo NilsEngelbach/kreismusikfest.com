@@ -32,7 +32,7 @@ export default function Programm() {
 
       <h3 className="mb-3 text-lg font-bold">Helfen</h3>
       <div className="mb-4">
-        Ihr möchtet uns als Helfer mit anpacken:
+        Ihr möchtet als Helfer mit anpacken:
         <ul className="mt-1">
           <li className="mb-2">
             <span>

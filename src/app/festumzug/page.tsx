@@ -28,7 +28,7 @@ export default function Festumzug() {
       <div className="flex flex-col md:flex-row">
         <div className="flex-1">
           <p className="mb-4">
-            Begleitet von <b>befreundeten Musikvereinen, Gruppen</b> und
+            Begleitet von <b>befreundeten Musikvereinen, Gruppen</b> und{" "}
             <b>begeisterten Zuschauern</b> ziehen wir durch die Straßen von
             Schwieberdingen, um das 100-jährige Bestehen des Musikverein
             Schwieberdingen zu feiern. Dieses besondere Jubiläum bietet uns

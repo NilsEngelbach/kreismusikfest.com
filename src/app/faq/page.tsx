@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 import React from "react";
 
 export const metadata = {
@@ -32,9 +33,22 @@ export default function Programm() {
       question: "Kostet das Kreismusikfest Eintritt?",
       answer: (
         <>
+          <p className="mb-2">
+            Für das Konzert von{" "}
+            <b>Fättes Blech & Druckluft am Freitag, 09.05.2025</b> kostet ein{" "}
+            <b>Ticket 29€</b> (zzgl. VVK Gebühren). Die Tickets können auf{" "}
+            <Link
+              className="underline"
+              href="https://mv-schwieberdingen.de/tickets"
+              target="_blank"
+            >
+              https://mv-schwieberdingen.de/tickets
+            </Link>{" "}
+            erworben werden.
+          </p>
           <p>
-            Am Freitag, 09.05.2025 kostet ein Ticket 29€. Am Samstag, Sonntag
-            und Montag (10.05. bis 12.05.) ist der Eintritt frei.
+            Am <b>Samstag, Sonntag und Montag</b> (10.05. bis 12.05.2025) ist
+            der <b>Eintritt frei</b>.
           </p>
         </>
       ),
