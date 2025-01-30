@@ -56,7 +56,8 @@ export default function Wertungsspiel() {
         </div>
       </div>
       <p className="mb-4">
-        <b>Anmeldungen</b> sind bis zum <b>20. Januar 2025</b> möglich.
+        <b>Anmeldungen</b> sind bis zum <s>20. Januar 2025</s>{" "}
+        <b>7. Februar 2025</b> möglich.
       </p>
       <Link
         href="/Ausschreibung_Wertungsspiel2025.pdf"
@@ -68,7 +69,9 @@ export default function Wertungsspiel() {
       <p className="pb-4">
         Die <b>Bekanntgabe der Ergebnisse</b> findet am{" "}
         <b>Sonntag, 11. Mai 2025</b>, im Anschluss an den großen Festzug beim
-        Kreismusikfest im <b>Festzelt in Schwieberdingen</b> statt.
+        Kreismusikfest im <b>Festzelt in Schwieberdingen</b> statt. Das
+        Orchester, welches am Wettbewerb bei uns die höchste Punktezahl
+        erreicht, kann an der BRAWISSIMO im Rahmen der Brawo-Messe teilnehmen.
       </p>
       <h3 className="mb-4 text-lg font-bold">Anmeldung</h3>
       <div className="mb-6 flex flex-col gap-4 md:flex-row">
