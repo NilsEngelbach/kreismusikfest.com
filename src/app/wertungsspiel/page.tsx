@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,15 +6,15 @@ import React from "react";
 export const metadata = {
   title: "Wertungsspiel | Kreismusikfest 2025",
   description: "Wertungsspiel beim Kreismusikfest Ludwigsburg am 10. Mai 2025",
-  alternates: { canonical: "https://kreismusikfest.com/wertungsspiel" },
+  alternates: { canonical: "https://www.kreismusikfest.com/wertungsspiel" },
   openGraph: {
     title: "Wertungsspiel | Kreismusikfest 2025",
     description:
       "Wertungsspiel beim Kreismusikfest Ludwigsburg am 10. Mai 2025",
-    url: "https://kreismusikfest.com/wertungsspiel",
+    url: "https://www.kreismusikfest.com/wertungsspiel",
     images: [
       {
-        url: "https://kreismusikfest.com/orchestra.jpg",
+        url: "https://www.kreismusikfest.com/orchestra.jpg",
         width: 1000,
         height: 667,
       },
@@ -24,6 +25,13 @@ export const metadata = {
 export default function Wertungsspiel() {
   return (
     <div className="mx-auto max-w-4xl p-4">
+      <Head>
+        <link
+          rel="canonical"
+          href="https://www.kreismusikfest.com/wertungsspiel"
+          key="canonical"
+        />
+      </Head>
       <h1 className="mb-4 mt-4 text-xl font-bold">Wertungsspiel</h1>
       <div className="flex flex-col md:flex-row">
         <div className="flex-1">

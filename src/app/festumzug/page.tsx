@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
@@ -5,15 +6,15 @@ export const metadata = {
   title: "Festumzug | Kreismusikfest 2025",
   description:
     "Festumzug zum 100-jährigen Jubiläum des Musikverein Schwieberdingen am 11. Mai 2025",
-  alternates: { canonical: "https://kreismusikfest.com/festumzug" },
+  alternates: { canonical: "https://www.kreismusikfest.com/festumzug" },
   openGraph: {
     title: "Festumzug | Kreismusikfest 2025",
     description:
       "Festumzug zum 100-jährigen Jubiläum des Musikverein Schwieberdingen am 11. Mai 2025",
-    url: "https://kreismusikfest.com/festumzug",
+    url: "https://www.kreismusikfest.com/festumzug",
     images: [
       {
-        url: "https://kreismusikfest.com/festumzug.jpeg",
+        url: "https://www.kreismusikfest.com/festumzug.jpeg",
         width: 1080,
         height: 810,
       },
@@ -24,6 +25,13 @@ export const metadata = {
 export default function Festumzug() {
   return (
     <div className="mx-auto max-w-4xl p-4">
+      <Head>
+        <link
+          rel="canonical"
+          href="https://www.kreismusikfest.com/festumzug"
+          key="canonical"
+        />
+      </Head>
       <h1 className="mb-4 mt-4 text-xl font-bold">Festumzug</h1>
       <div className="flex flex-col md:flex-row">
         <div className="flex-1">

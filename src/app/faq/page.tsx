@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 
@@ -11,15 +12,15 @@ export const metadata = {
   title: "FAQ & Anfahrt | Kreismusikfest 2025",
   description:
     "Häufige Fragen und Antworten & Informationen zur Anfahrt für das Kreismusikfest Ludwigsburg 2025",
-  alternates: { canonical: "https://kreismusikfest.com/faq" },
+  alternates: { canonical: "https://www.kreismusikfest.com/faq" },
   openGraph: {
     title: "FAQ & Anfahrt | Kreismusikfest 2025",
     description:
       "Häufige Fragen und Antworten & Informationen zur Anfahrt für das Kreismusikfest Ludwigsburg 2025",
-    url: "https://kreismusikfest.com/faq",
+    url: "https://www.kreismusikfest.com/faq",
     images: [
       {
-        url: "https://kreismusikfest.com/festumzug.jpeg",
+        url: "https://www.kreismusikfest.com/festumzug.jpeg",
         width: 1080,
         height: 810,
       },
@@ -57,6 +58,13 @@ export default function Programm() {
 
   return (
     <div className="mx-auto max-w-4xl p-4">
+      <Head>
+        <link
+          rel="canonical"
+          href="https://www.kreismusikfest.com/faq"
+          key="canonical"
+        />
+      </Head>
       <h1 className="mb-4 mt-4 text-xl font-bold">FAQs</h1>
       <p className="mb-4">
         Um Euch den{" "}

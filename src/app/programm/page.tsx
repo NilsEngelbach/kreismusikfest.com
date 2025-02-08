@@ -7,20 +7,21 @@ import {
 } from "@/components/ui/accordion";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 export const metadata = {
   title: "Programm | Kreismusikfest 2025",
   description:
     "4 Tage abwechslungsreiches Programm beim Kreismusikfest vom 09. bis 12. Mai 2025",
-  alternates: { canonical: "https://kreismusikfest.com/programm" },
+  alternates: { canonical: "https://www.kreismusikfest.com/programm" },
   openGraph: {
     title: "Programm | Kreismusikfest 2025",
     description:
       "4 Tage abwechslungsreiches beim Kreismusikfest vom 09. bis 12. Mai 2025",
-    url: "https://kreismusikfest.com/programm",
+    url: "https://www.kreismusikfest.com/programm",
     images: [
       {
-        url: "https://kreismusikfest.com/programm.png",
+        url: "https://www.kreismusikfest.com/programm.png",
         width: 1920,
         height: 1358,
       },
@@ -568,6 +569,13 @@ export default function Programm() {
 
   return (
     <div className="mx-auto max-w-3xl p-4">
+      <Head>
+        <link
+          rel="canonical"
+          href="https://www.kreismusikfest.com/programm"
+          key="canonical"
+        />
+      </Head>
       <h1 className="mb-2 mt-4 text-xl font-bold">
         4 Tage abwechslungsreiches Programm!
       </h1>

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://kreismusikfest.com
+Host: https://www.kreismusikfest.com
 
 # Sitemaps
-Sitemap: https://kreismusikfest.com/sitemap.xml
+Sitemap: https://www.kreismusikfest.com/sitemap.xml

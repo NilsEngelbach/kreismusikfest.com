@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
@@ -5,15 +6,15 @@ export const metadata = {
   title: "Kontakt | Kreismusikfest 2025",
   description:
     "Ansprechpartner für alle Fragen rund um das Kreismusikfest Ludwigsburg 2025",
-  alternates: { canonical: "https://kreismusikfest.com/kontakt" },
+  alternates: { canonical: "https://www.kreismusikfest.com/kontakt" },
   openGraph: {
     title: "Kontakt | Kreismusikfest 2025",
     description:
       "Ansprechpartner für alle Fragen rund um das Kreismusikfest Ludwigsburg 2025",
-    url: "https://kreismusikfest.com/kontakt",
+    url: "https://www.kreismusikfest.com/kontakt",
     images: [
       {
-        url: "https://kreismusikfest.com/programm.png",
+        url: "https://www.kreismusikfest.com/programm.png",
         width: 1920,
         height: 1358,
       },
@@ -24,6 +25,13 @@ export const metadata = {
 export default function Programm() {
   return (
     <div className="mx-auto max-w-4xl p-4">
+      <Head>
+        <link
+          rel="canonical"
+          href="https://www.kreismusikfest.com/kontakt"
+          key="canonical"
+        />
+      </Head>
       <h1 className="mb-4 mt-4 text-xl font-bold">Kontakt</h1>
 
       <p className="mb-6">

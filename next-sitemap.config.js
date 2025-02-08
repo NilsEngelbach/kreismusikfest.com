@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://kreismusikfest.com",
+  siteUrl: "https://www.kreismusikfest.com",
   generateRobotsTxt: true,
   exclude: ["/impressum"],
 };

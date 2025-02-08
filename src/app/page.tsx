@@ -1,10 +1,39 @@
 import Image from "next/image";
 import Countdown from "./countdown";
 import Link from "next/link";
+import Head from "next/head";
+
+export const metadata = {
+  title:
+    "Kreismusikfest Ludwigsburg 2025 | 9.-12. Mai | Festplatz Schwieberdingen",
+  description:
+    "Vom 09. bis 12.05.2025 findet das Kreismusikfest Ludwigsburg auf dem Festplatz in Schwieberdingen statt. Neben dem Wertungsspiel für Orchester gibt es an ein buntes Programm für Groß und Klein.",
+  alternates: { canonical: "https://www.kreismusikfest.com" },
+  openGraph: {
+    title: "Kreismusikfest Ludwigsburg 2025",
+    description:
+      "Vom 09. bis 12.05.2025 findet das Kreismusikfest Ludwigsburg auf dem Festplatz in Schwieberdingen statt. Neben dem Wertungsspiel für Orchester gibt es ein buntes Programm für Groß und Klein.",
+    url: "https://www.kreismusikfest.com",
+    images: [
+      {
+        url: "https://www.kreismusikfest.com/blech-x-plosion.webp",
+        width: 1500,
+        height: 844,
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
     <main>
+      <Head>
+        <link
+          rel="canonical"
+          href="https://www.kreismusikfest.com"
+          key="canonical"
+        />
+      </Head>
       {/* Highlights Section */}
       <section className="bg-gray-50 p-4 md:p-6">
         <h2 className="mb-6 text-center text-2xl font-semibold">Highlights</h2>

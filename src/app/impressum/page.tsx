@@ -1,8 +1,12 @@
+import Head from "next/head";
 import React from "react";
 
 export default function Imprint() {
   return (
     <div className="mx-auto max-w-4xl p-4">
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <h1 className="my-4 text-2xl font-bold">Impressum</h1>
       <p>
         <b>Blasmusik Kreisverband Ludwigsburg e.V.</b>
