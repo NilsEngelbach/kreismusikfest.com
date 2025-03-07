@@ -128,14 +128,117 @@ export default function Programm() {
       ticketInfo: "Eintritt frei!",
       events: [
         {
+          time: "14:00",
+          title: 'Mitmachkonzert: "Jazz für Kinder"',
+          description: (
+            <>
+              <figure>
+                <Image
+                  src="/logos/jazz_für_kinder.png"
+                  alt="Jazz für Kinder"
+                  width={639}
+                  height={108}
+                />
+                <figcaption>© Jazz für Kinder</figcaption>
+              </figure>
+              <p className="mt-2">
+                Während die Kinder ganz vorne sitzen, erleben sie eine Jazzband,
+                die verschiedene Jazzstile und Kinderliedklassiker
+                interpretiert. Ob tanzende Enten oder groovende Chinesen – die
+                fantasievollen Darbietungen lassen nicht nur die Kinder, sondern
+                auch ihre erwachsenen Begleiter in Stimmung kommen. „Jazz für
+                Kinder“{" "}
+                <b>
+                  verbindet Spaß, Musik und Bewegung zu einem Erlebnis für alle
+                  Sinne
+                </b>
+                . Mit ihrem kreativen und spielerischen Umgang mit Tönen und
+                Rhythmen macht das Jazzquartett der HMDK vor allem
+                <b>Lust auf eigene musikalische Entdeckungen</b> – auch weit
+                über das Konzert hinaus. Das <b>Mitmachkonzert</b>, das sich an
+                Kinder ab 3 Jahren, Eltern, Großeltern und Freunde richtet,
+                beginnt um <b>14:00 Uhr und dauert eine vergnügte Stunde.</b>
+              </p>
+              <p className="mt-2">
+                <b>Der Eintritt ist frei!</b>
+              </p>
+            </>
+          ),
+        },
+        {
           time: "15:00",
           title: "Familiennachmittag",
           description: (
             <>
-              <p>
-                Das genaue Programm für den Familiennachmittag wird rechtzeitig
-                vor dem Fest hier bekannt gegeben.
+              <div className="mx-auto grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
+                <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+                  <Image
+                    className="rounded h-full"
+                    alt="Familiennachmittag"
+                    src="/familiennachmittag-2.jpg"
+                    width={700}
+                    height={467}
+                    style={{ objectFit: "cover" }}
+                  ></Image>
+                </div>
+                <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+                  <Image
+                    className="rounded h-full"
+                    alt="Familiennachmittag"
+                    src="/Hüpfburg.jpg"
+                    width={800}
+                    height={600}
+                    style={{ objectFit: "cover" }}
+                  ></Image>
+                </div>
+                <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+                  <Image
+                    className="rounded h-full"
+                    alt="Familiennachmittag"
+                    src="/familiennachmittag-3.jpg"
+                    width={1200}
+                    height={800}
+                    style={{ objectFit: "cover" }}
+                  ></Image>
+                </div>
+                <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+                  <Image
+                    className="rounded h-full"
+                    alt="Familiennachmittag"
+                    src="/familiennachmittag-4.jpg"
+                    width={1200}
+                    height={800}
+                    style={{ objectFit: "cover" }}
+                  ></Image>
+                </div>
+              </div>
+              <p className="mt-2">
+                Auf der <b>Hüpfburg</b> und in der{" "}
+                <b>
+                  Spielstraße der{" "}
+                  <a href="https://www.feuerwehr-schwieberdingen.de/">
+                    Jugendfeuerwehr Schwieberdingen
+                  </a>
+                </b>{" "}
+                können sich die Kinder austoben. Auf der Bühne gibt es ein{" "}
+                <b>buntes Programm der Musikschule</b>. Neben dem{" "}
+                <b>Vororchester</b>, den <b>Bläser- und Streicherklassen</b> und
+                dem <b>Jugend-Kammer-Orchester</b> dürfen auch die{" "}
+                <b>Jungmusiker aus den Kitas und der Cupsong AG</b> ihren großen
+                Auftritt im Festzelt feiern. Zum Abschluss heizen die{" "}
+                <b>Blaulichtband & Jilis</b> dem Publikum im Zelt nochmal
+                richtig ein.
               </p>
+              <figure className="mt-2">
+                <Image
+                  className="mx-auto"
+                  src="/logos/Musikschule.jpg"
+                  alt="Musikschule Schwieberdingen"
+                  width={300}
+                  height={199}
+                />
+                <figcaption className="text-center">© Musikschule Schwieberdingen</figcaption>
+              </figure>
             </>
           ),
         },

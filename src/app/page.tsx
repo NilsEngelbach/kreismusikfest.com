@@ -396,13 +396,24 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+          <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
             <Link href="/programm">
               <Image
-                alt="Musikverein Ahausen"
-                src="/logos/MV-Ahausen.png"
-                width={3375}
-                height={1312}
+                alt="Knutschfleck"
+                src="/logos/Knutschfleck.png"
+                width={1209}
+                height={422}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Jazz für Kinder"
+                src="/logos/jazz_für_kinder.svg"
+                width={639}
+                height={108}
                 style={{ objectFit: "contain" }}
               ></Image>
             </Link>
@@ -410,10 +421,10 @@ export default function Home() {
           <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
             <Link href="/programm">
               <Image
-                alt="Knutschfleck"
-                src="/logos/Knutschfleck.png"
-                width={1209}
-                height={422}
+                alt="Musikverein Ahausen"
+                src="/logos/MV-Ahausen.png"
+                width={3375}
+                height={1312}
                 style={{ objectFit: "contain" }}
               ></Image>
             </Link>
