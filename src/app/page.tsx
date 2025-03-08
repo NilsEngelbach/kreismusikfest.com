@@ -433,9 +433,9 @@ export default function Home() {
             <Link href="/programm">
               <Image
                 alt="Musikschule Schwieberdingen"
-                src="/logos/Musikschule.jpg"
-                width={300}
-                height={199}
+                src="/logos/Musikschule.png"
+                width={1080}
+                height={1080}
                 style={{ objectFit: "contain" }}
               ></Image>
             </Link>

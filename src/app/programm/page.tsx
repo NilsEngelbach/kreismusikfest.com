@@ -173,7 +173,7 @@ export default function Programm() {
               <div className="mx-auto grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
                 <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
                   <Image
-                    className="rounded h-full"
+                    className="h-full rounded"
                     alt="Familiennachmittag"
                     src="/familiennachmittag-2.jpg"
                     width={700}
@@ -183,7 +183,7 @@ export default function Programm() {
                 </div>
                 <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
                   <Image
-                    className="rounded h-full"
+                    className="h-full rounded"
                     alt="Familiennachmittag"
                     src="/Hüpfburg.jpg"
                     width={800}
@@ -193,7 +193,7 @@ export default function Programm() {
                 </div>
                 <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
                   <Image
-                    className="rounded h-full"
+                    className="h-full rounded"
                     alt="Familiennachmittag"
                     src="/familiennachmittag-3.jpg"
                     width={1200}
@@ -203,7 +203,7 @@ export default function Programm() {
                 </div>
                 <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
                   <Image
-                    className="rounded h-full"
+                    className="h-full rounded"
                     alt="Familiennachmittag"
                     src="/familiennachmittag-4.jpg"
                     width={1200}
@@ -224,20 +224,23 @@ export default function Programm() {
                 <b>buntes Programm der Musikschule</b>. Neben dem{" "}
                 <b>Vororchester</b>, den <b>Bläser- und Streicherklassen</b> und
                 dem <b>Jugend-Kammer-Orchester</b> dürfen auch die{" "}
-                <b>Jungmusiker aus den Kitas und der Cupsong AG</b> ihren großen
-                Auftritt im Festzelt feiern. Zum Abschluss heizen die{" "}
-                <b>Blaulichtband & Jilis</b> dem Publikum im Zelt nochmal
-                richtig ein.
+                <b>Jungmusiker der Cupsong AG</b>{" "}
+                ihren großen Auftritt im Festzelt feiern und die <b>Kinder der Kita Sonnenschein</b>
+                feieren mit uns gemeinsam ihr 50-jähriges Bestehen. Zum Abschluss
+                heizen die <b>Blaulichtband & Jilis</b> dem Publikum im Zelt
+                nochmal richtig ein.
               </p>
               <figure className="mt-2">
                 <Image
                   className="mx-auto"
-                  src="/logos/Musikschule.jpg"
+                  src="/logos/Musikschule.png"
                   alt="Musikschule Schwieberdingen"
-                  width={300}
-                  height={199}
+                  width={1080}
+                  height={1080}
                 />
-                <figcaption className="text-center">© Musikschule Schwieberdingen</figcaption>
+                <figcaption className="text-center">
+                  © Musikschule Schwieberdingen
+                </figcaption>
               </figure>
             </>
           ),
