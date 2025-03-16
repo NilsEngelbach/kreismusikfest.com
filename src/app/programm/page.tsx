@@ -570,14 +570,14 @@ export default function Programm() {
             <>
               <span>
                 Wir schnaufen noch einmal durch und machen von{" "}
-                <b>13:30 bis 16:30 Pause</b>, um dann frisch gestärkt zum Finale
+                <b>13:30 bis 17:00 Pause</b>, um dann frisch gestärkt zum Finale
                 anzusetzen!
               </span>
             </>
           ),
         },
         {
-          time: "16:30",
+          time: "17:00",
           title: "Jugendorchester",
           description: (
             <>

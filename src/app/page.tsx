@@ -343,8 +343,51 @@ export default function Home() {
       <section className="border-t bg-white p-4 text-center md:p-6">
         <h2 className="mb-2 text-lg">Vielen Dank an alle</h2>
         <h3 className="mb-6 text-xl font-bold">Sponsoren & Unterstützer</h3>
-        <div className="flex justify-center">
-          <div className="bg-white-50 transform rounded p-4 shadow-md transition-transform md:hover:scale-105">
+        <div className="mx-auto mb-4 grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
+          {/* Platin */}
+          <div className="col-span-2 min-h-60 flex transform items-center justify-center rounded bg-white p-6 shadow-md transition-transform md:hover:scale-105">
+            <Link
+              href="http://brosi-landmetzgerei.de/"
+              target="_blank"
+            >
+              <Image
+                alt="Landmetzgerei Werner Brosi"
+                src="/sponsoren/Landmetzgerei_Brosi.png"
+                width={418}
+                height={150}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="col-span-2 min-h-60 flex transform items-center justify-center rounded bg-white p-6 shadow-md transition-transform md:hover:scale-105">
+            <Link
+              href="https://walker-anhaenger.de/"
+              target="_blank"
+            >
+              <Image
+                alt="Walker Anhänger-Center"
+                src="/sponsoren/Walker_Anhaenger.png"
+                width={400}
+                height={133}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="col-span-2 min-h-60 flex transform items-center justify-center rounded bg-white p-0 shadow-md transition-transform md:hover:scale-105">
+            <Link
+              href="https://www.dillmann-gartentechnik.de/"
+              target="_blank"
+            >
+              <Image
+                alt="Dillmann Gartentechnik"
+                src="/sponsoren/Dillmann.png"
+                width={300}
+                height={129}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="col-span-2 min-h-60 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
             <Link
               href="https://www.vrbank-lb.de/startseite.html"
               target="_blank"
@@ -352,11 +395,72 @@ export default function Home() {
               <Image
                 alt="VR-Bank Ludwigsburg"
                 src="/sponsoren/VR-Bank-Ludwigburg.jpg"
-                height={1303}
-                width={275}
+                width={1303}
+                height={275}
+                style={{ objectFit: "contain" }}
               ></Image>
             </Link>
           </div>
+
+          {/* Silber */}
+
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link
+              href="https://www.auto-scheller.de/"
+              target="_blank"
+            >
+              <Image
+                alt="Auto Scheller"
+                src="/sponsoren/Scheller.png"
+                width={476}
+                height={99}
+              ></Image>
+            </Link>
+          </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link
+              href="https://www.flegl.online/"
+              target="_blank"
+            >
+              <Image
+                alt="Flegl und Lohrer"
+                src="/sponsoren/Flegl_und_Lohrer.jpg"
+                height={2000}
+                width={2000}
+              ></Image>
+            </Link>
+          </div>
+
+          {/* Bronze */}
+
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link
+              href="https://www.malerburkhardt.de/"
+              target="_blank"
+            >
+              <Image
+                alt="Maler Burkhardt"
+                src="/sponsoren/Maler_Burkhardt.png"
+                width={577}
+                height={199}
+              ></Image>
+            </Link>
+          </div>
+
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link
+              href="http://www.montagnese.de/"
+              target="_blank"
+            >
+              <Image
+                alt="Montagnese"
+                src="/sponsoren/Montagnese.png"
+                width={1504}
+                height={752}
+              ></Image>
+            </Link>
+          </div>
+
         </div>
         <div className="mx-auto mt-4 max-w-4xl text-center">
           <Link
