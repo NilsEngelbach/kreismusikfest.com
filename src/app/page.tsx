@@ -345,11 +345,8 @@ export default function Home() {
         <h3 className="mb-6 text-xl font-bold">Sponsoren & Unterstützer</h3>
         <div className="mx-auto mb-4 grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
           {/* Platin */}
-          <div className="col-span-2 min-h-60 flex transform items-center justify-center rounded bg-white p-6 shadow-md transition-transform md:hover:scale-105">
-            <Link
-              href="http://brosi-landmetzgerei.de/"
-              target="_blank"
-            >
+          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-6 shadow-md transition-transform md:hover:scale-105">
+            <Link href="http://brosi-landmetzgerei.de/" target="_blank">
               <Image
                 alt="Landmetzgerei Werner Brosi"
                 src="/sponsoren/Landmetzgerei_Brosi.png"
@@ -359,11 +356,8 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
-          <div className="col-span-2 min-h-60 flex transform items-center justify-center rounded bg-white p-6 shadow-md transition-transform md:hover:scale-105">
-            <Link
-              href="https://walker-anhaenger.de/"
-              target="_blank"
-            >
+          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-6 shadow-md transition-transform md:hover:scale-105">
+            <Link href="https://walker-anhaenger.de/" target="_blank">
               <Image
                 alt="Walker Anhänger-Center"
                 src="/sponsoren/Walker_Anhaenger.png"
@@ -373,11 +367,8 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
-          <div className="col-span-2 min-h-60 flex transform items-center justify-center rounded bg-white p-0 shadow-md transition-transform md:hover:scale-105">
-            <Link
-              href="https://www.dillmann-gartentechnik.de/"
-              target="_blank"
-            >
+          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-0 shadow-md transition-transform md:hover:scale-105">
+            <Link href="https://www.dillmann-gartentechnik.de/" target="_blank">
               <Image
                 alt="Dillmann Gartentechnik"
                 src="/sponsoren/Dillmann.png"
@@ -387,7 +378,7 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
-          <div className="col-span-2 min-h-60 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
             <Link
               href="https://www.vrbank-lb.de/startseite.html"
               target="_blank"
@@ -405,10 +396,7 @@ export default function Home() {
           {/* Silber */}
 
           <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link
-              href="https://www.auto-scheller.de/"
-              target="_blank"
-            >
+            <Link href="https://www.auto-scheller.de/" target="_blank">
               <Image
                 alt="Auto Scheller"
                 src="/sponsoren/Scheller.png"
@@ -418,10 +406,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link
-              href="https://www.flegl.online/"
-              target="_blank"
-            >
+            <Link href="https://www.flegl.online/" target="_blank">
               <Image
                 alt="Flegl und Lohrer"
                 src="/sponsoren/Flegl_und_Lohrer.jpg"
@@ -434,10 +419,7 @@ export default function Home() {
           {/* Bronze */}
 
           <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link
-              href="https://www.malerburkhardt.de/"
-              target="_blank"
-            >
+            <Link href="https://www.malerburkhardt.de/" target="_blank">
               <Image
                 alt="Maler Burkhardt"
                 src="/sponsoren/Maler_Burkhardt.png"
@@ -448,10 +430,7 @@ export default function Home() {
           </div>
 
           <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link
-              href="http://www.montagnese.de/"
-              target="_blank"
-            >
+            <Link href="http://www.montagnese.de/" target="_blank">
               <Image
                 alt="Montagnese"
                 src="/sponsoren/Montagnese.png"
@@ -460,7 +439,6 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
-
         </div>
         <div className="mx-auto mt-4 max-w-4xl text-center">
           <Link

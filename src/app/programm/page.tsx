@@ -224,11 +224,11 @@ export default function Programm() {
                 <b>buntes Programm der Musikschule</b>. Neben dem{" "}
                 <b>Vororchester</b>, den <b>Bläser- und Streicherklassen</b> und
                 dem <b>Jugend-Kammer-Orchester</b> dürfen auch die{" "}
-                <b>Jungmusiker der Cupsong AG</b>{" "}
-                ihren großen Auftritt im Festzelt feiern und die <b>Kinder der Kita Sonnenschein</b>
-                feieren mit uns gemeinsam ihr 50-jähriges Bestehen. Zum Abschluss
-                heizen die <b>Blaulichtband & Jilis</b> dem Publikum im Zelt
-                nochmal richtig ein.
+                <b>Jungmusiker der Cupsong AG</b> ihren großen Auftritt im
+                Festzelt feiern und die <b>Kinder der Kita Sonnenschein</b>
+                feieren mit uns gemeinsam ihr 50-jähriges Bestehen. Zum
+                Abschluss heizen die <b>Blaulichtband & Jilis</b> dem Publikum
+                im Zelt nochmal richtig ein.
               </p>
               <figure className="mt-2">
                 <Image
