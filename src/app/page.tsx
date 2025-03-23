@@ -372,8 +372,8 @@ export default function Home() {
               <Image
                 alt="Dillmann Gartentechnik"
                 src="/sponsoren/Dillmann.png"
-                width={300}
-                height={129}
+                width={1280}
+                height={786}
                 style={{ objectFit: "contain" }}
               ></Image>
             </Link>
@@ -385,9 +385,9 @@ export default function Home() {
             >
               <Image
                 alt="VR-Bank Ludwigsburg"
-                src="/sponsoren/VR-Bank-Ludwigburg.jpg"
-                width={1303}
-                height={275}
+                src="/sponsoren/VR_Bank_Ludwigsburg.png"
+                width={686}
+                height={189}
                 style={{ objectFit: "contain" }}
               ></Image>
             </Link>
@@ -415,6 +415,16 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="https://www.zimmerei-schinz.de/" target="_blank">
+              <Image
+                alt="Zimmerei Schinz"
+                src="/sponsoren/schinz-markgroeningen.png"
+                height={1230}
+                width={588}
+              ></Image>
+            </Link>
+          </div>
 
           {/* Bronze */}
 
@@ -425,6 +435,17 @@ export default function Home() {
                 src="/sponsoren/Maler_Burkhardt.png"
                 width={577}
                 height={199}
+              ></Image>
+            </Link>
+          </div>
+
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="https://www.planitzer.de/truck-service.html" target="_blank">
+              <Image
+                alt="Planitzer"
+                src="/sponsoren/Planitzer.png"
+                width={700}
+                height={263}
               ></Image>
             </Link>
           </div>
