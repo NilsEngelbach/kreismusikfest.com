@@ -378,6 +378,17 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
+          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-0 shadow-md transition-transform md:hover:scale-105">
+            <Link href="https://www.pflege-schwieberdingen.de/" target="_blank">
+              <Image
+                alt="Schützinger Häusliche Pflege"
+                src="/sponsoren/schützinger.png"
+                width={180}
+                height={180}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
           <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
             <Link
               href="https://www.vrbank-lb.de/startseite.html"
@@ -425,6 +436,14 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Image
+              alt="Eberle Bauservice"
+              src="/sponsoren/eberle.gif"
+              height={200}
+              width={300}
+            ></Image>
+          </div>
 
           {/* Bronze */}
 
@@ -460,6 +479,18 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
+
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="https://www.amschlosshof.de/" target="_blank">
+              <Image
+                alt="Reisebüro am Schlosshof"
+                src="/sponsoren/reisebüro_am_schlosshof.jpg"
+                width={1102}
+                height={391}
+              ></Image>
+            </Link>
+          </div>
+
         </div>
         <div className="mx-auto mt-4 max-w-4xl text-center">
           <Link
