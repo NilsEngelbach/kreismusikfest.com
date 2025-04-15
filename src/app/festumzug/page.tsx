@@ -141,7 +141,7 @@ export default function Festumzug() {
             target="_blank"
             href="https://www.hkk-schwieberdinger-gruppe.de/"
           >
-            Heimat- und Kulturkreis "Schwieberdinger Gruppe" e.V.
+            Heimat- und Kulturkreis 'Schwieberdinger Gruppe' e.V.
           </Link>
         </li>
         <li>
@@ -227,7 +227,7 @@ export default function Festumzug() {
             target="_blank"
             href="https://mv-schwieberdingen.de/"
           >
-            MV Schwieberdingen "Oldies"
+            MV Schwieberdingen 'Oldies'
           </Link>
         </li>
         <li>
@@ -237,7 +237,7 @@ export default function Festumzug() {
             target="_blank"
             href="https://mv-schwieberdingen.de/"
           >
-            MV Schwieberdingen "Jugendkapelle & Blasorchester"
+            MV Schwieberdingen 'Jugendkapelle & Blasorchester'
           </Link>
         </li>
         <li>
@@ -367,7 +367,7 @@ export default function Festumzug() {
             target="_blank"
             href="https://tsv-schwieberdingen.de/abteilungen/fussball"
           >
-            TSV Schwieberdingen "Jugendfußball"
+            TSV Schwieberdingen 'Jugendfußball'
           </Link>
         </li>
         <li>
@@ -377,7 +377,7 @@ export default function Festumzug() {
             target="_blank"
             href="https://www.tsv-schwieberdingen.de/abteilungen/turnen"
           >
-            TSV Schwieberdingen "Turnen"
+            TSV Schwieberdingen 'Turnen'
           </Link>
         </li>
       </ul>
