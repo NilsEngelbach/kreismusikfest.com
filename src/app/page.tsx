@@ -421,8 +421,8 @@ export default function Home() {
               <Image
                 alt="Flegl und Lohrer"
                 src="/sponsoren/Flegl_und_Lohrer.jpg"
-                height={2000}
                 width={2000}
+                height={2000}
               ></Image>
             </Link>
           </div>
@@ -431,8 +431,8 @@ export default function Home() {
               <Image
                 alt="Zimmerei Schinz"
                 src="/sponsoren/schinz-markgroeningen.png"
-                height={1230}
                 width={588}
+                height={1230}
               ></Image>
             </Link>
           </div>
@@ -440,8 +440,8 @@ export default function Home() {
             <Image
               alt="Eberle Bauservice"
               src="/sponsoren/eberle.gif"
-              height={200}
               width={300}
+              height={200}
             ></Image>
           </div>
 
@@ -490,6 +490,19 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
+
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="https://widmann.graphicstudio.de/" target="_blank">
+              <Image
+                alt="Walter Widmann GmbH"
+                src="/sponsoren/widmann.png"
+                width={262}
+                height={81}
+              ></Image>
+            </Link>
+          </div>
+
+
 
         </div>
         <div className="mx-auto mt-4 max-w-4xl text-center">
