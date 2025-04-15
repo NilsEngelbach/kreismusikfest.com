@@ -459,7 +459,10 @@ export default function Home() {
           </div>
 
           <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://www.planitzer.de/truck-service.html" target="_blank">
+            <Link
+              href="https://www.planitzer.de/truck-service.html"
+              target="_blank"
+            >
               <Image
                 alt="Planitzer"
                 src="/sponsoren/Planitzer.png"
@@ -501,9 +504,6 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
-
-
-
         </div>
         <div className="mx-auto mt-4 max-w-4xl text-center">
           <Link
