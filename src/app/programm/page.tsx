@@ -666,6 +666,19 @@ export default function Programm() {
                   Das ganze Zelt feiert zum Abschluss zusammen
                 </figcaption>
               </figure>
+              <p className="my-4">
+                In diesem Jahr wird das Showprogramm durch mitreißende
+                Tanzeinlagen der Tanzschule Tanzraum bereichert.
+              </p>
+              <figure>
+                <Image
+                  src="/logos/tanz_raum.jpg"
+                  alt="Tanzschule Tanzraum"
+                  width={812}
+                  height={257}
+                />
+                <figcaption>Tanzschule Tanzraum</figcaption>
+              </figure>
             </>
           ),
         },

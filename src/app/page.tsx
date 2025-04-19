@@ -518,7 +518,7 @@ export default function Home() {
       {/* Anniversary Section */}
       <section className="border-t bg-gray-50 p-4 text-center md:p-6">
         <h2 className="mb-2 text-lg">Über 30 Stunden Live Musik</h2>
-        <h3 className="mb-6 text-xl font-bold">Auf der Bühne & Festumzug</h3>
+        <h3 className="mb-6 text-xl font-bold">Auf der Bühne</h3>
 
         <div className="mx-auto mb-4 grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
           <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
@@ -642,6 +642,17 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
+          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="/programm">
+              <Image
+                alt="Tanzraum"
+                src="/logos/tanz_raum.jpg"
+                width={812}
+                height={257}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
         </div>
         <div className="mx-auto mt-4 max-w-4xl text-center">
           <Link
@@ -649,6 +660,60 @@ export default function Home() {
             className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
           >
             Das komplette Programm
+          </Link>
+        </div>
+      </section>
+
+      <section className="border-t bg-white p-4 text-center md:p-6">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="mb-2 text-lg">Über 30 Gruppen</h2>
+          <h3 className="mb-6 text-xl font-bold">Großer Jubiläums Festumzug</h3>
+
+          <div className="mb-4 flex flex-col items-center gap-4 md:flex-row">
+            <div className="flex-1">
+              <figure className="transform transition-transform md:hover:scale-105">
+                <Link href="https://www.mv-schwieberdingen.de" target="_blank">
+                  <Image
+                    alt="Die Oldies beim Festumzug"
+                    src="/festumzug_oldies.jpg"
+                    height={751}
+                    width={500}
+                  ></Image>
+                </Link>
+                <figcaption className="text-sm text-gray-600">
+                  Über 30 Gruppen und Kapellen nehmen am großen Festumzug teil
+                </figcaption>
+              </figure>
+            </div>
+            <div className="flex-1 text-justify">
+              <p className="mb-4">
+                Begleitet von über 30 befreundeten <b>Musikvereinen, Gruppen</b>{" "}
+                und begeisterten Zuschauern ziehen wir am <b>Sonntag 11. Mai</b>{" "}
+                durch die Straßen von Schwieberdingen, um das{" "}
+                <b>100-jährige Bestehen des Musikverein Schwieberdingen</b> zu
+                feiern. Freuen Sie sich auf einen{" "}
+                <b>
+                  unvergesslichen Tag voller Musik, Freude und Gemeinschaft!
+                </b>
+              </p>
+              <p>
+                Der Umzug endet am <b>großen Festzelt am Bahnhof</b>, wo ein
+                abwechslungsreiches Programm mit weiteren musikalischen
+                Höhepunkten und geselligem Beisammensein auf Sie wartet.
+                Außerdem findet die{" "}
+                <b>Bekanntgabe der Ergebnisse des Wertungsspiels</b> im
+                Anschluss an den großen Festzug im Festzelt statt. Feiern Sie
+                mit uns <b>dieses unvergessliche Jubiläum!</b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto mt-4 max-w-4xl text-center">
+          <Link
+            href="/festumzug"
+            className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
+          >
+            Informationen zum Festumzug
           </Link>
         </div>
       </section>
