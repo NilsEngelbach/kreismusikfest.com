@@ -1,3 +1,9 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -63,17 +69,7 @@ export default function Wertungsspiel() {
           </figure>
         </div>
       </div>
-      <p className="mb-4">
-        <b>Anmeldungen</b> sind bis zum <s>20. Januar 2025</s>{" "}
-        <b>7. Februar 2025</b> möglich.
-      </p>
-      <Link
-        href="/Ausschreibung_Wertungsspiel2025.pdf"
-        target="_blank"
-        className="mb-4 inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-      >
-        Ausschreibung Wertungsspiel 2025 (PDF)
-      </Link>
+
       <p className="pb-4">
         Die <b>Bekanntgabe der Ergebnisse</b> findet am{" "}
         <b>Sonntag, 11. Mai 2025</b>, im Anschluss an den großen Festzug beim
@@ -81,30 +77,6 @@ export default function Wertungsspiel() {
         Orchester, welches am Wettbewerb bei uns die höchste Punktezahl
         erreicht, kann an der BRAWISSIMO im Rahmen der Brawo-Messe teilnehmen.
       </p>
-      <h3 className="mb-4 text-lg font-bold">Anmeldung</h3>
-      <div className="mb-6 flex flex-col gap-4 md:flex-row">
-        <Link
-          href="/Anmeldung_Erwachsenenorchester.pdf"
-          target="_blank"
-          className="flex-1 rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-        >
-          Erwachsenenorchester (PDF)
-        </Link>
-        <Link
-          href="/Anmeldung_Jugendorchester.pdf"
-          target="_blank"
-          className="flex-1 rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-        >
-          Jugendorchester (PDF)
-        </Link>
-        <Link
-          href="/Anmeldung_Kammermusik.pdf"
-          target="_blank"
-          className="flex-1 rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-        >
-          Kammermusik (PDF)
-        </Link>
-      </div>
 
       <h3 className="mb-3 text-lg font-bold">Helfen</h3>
       <p className="mb-6">
@@ -115,10 +87,113 @@ export default function Wertungsspiel() {
         <b>unter die Arme greifen</b> möchtest melde dich gerne!
       </p>
       <h3 className="mb-3 text-lg font-bold">Zuhören</h3>
-      <p className="mb-6">
-        Sobald der genaue Ablauf & Zeitplan feststeht stellen wir ihn hier für
-        Euch bereit.
-      </p>
+      <div className="mb-8">
+        <Accordion type="single" collapsible className="rounded-md bg-gray-100">
+          <AccordionItem
+            key="1"
+            value="1"
+            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+          >
+            <AccordionTrigger className="px-4 hover:bg-gray-100">
+              <div className="flex items-center gap-4">
+                <span className="font-medium">9:00</span>
+                <span className="font-freeman">
+                  Vororchester des Musikverein Stadtkapelle Ditzingen /
+                  Jugendmusikschule Ditzingen
+                </span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="px-4 py-2">
+              Leitung: <b>Alexander Heinz</b> – Kategorie 2 <br />
+              • A Day at Disneyland (arr. Michael Story) <br />
+              • Rhythm of the World (Markus Götz) <br />
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem
+            key="2"
+            value="2"
+            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+          >
+            <AccordionTrigger className="px-4 hover:bg-gray-100">
+              <div className="flex items-center gap-4">
+                <span className="font-medium">9:30</span>
+                <span className="font-freeman">
+                  Jugendblasorchester des Musikverein Stadtkapelle Ditzingen /
+                  Jugendmusikschule Ditzingen
+                </span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="px-4 py-2">
+              Leitung: <b>Alexander Heinz</b> – Kategorie 3 <br />
+              • Music From Pirates of the caribbean (Klaus Badelt, arr. Michael
+              Brown) <br />
+              • Tarzan Soundtrack Highlights (Phil Collins, arr. Paul Murtha){" "}
+              <br />
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem
+            key="3"
+            value="3"
+            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+          >
+            <AccordionTrigger className="px-4 hover:bg-gray-100">
+              <div className="flex items-center gap-4">
+                <span className="font-medium">10:30</span>
+                <span className="font-freeman">
+                  Musikverein Sersheim 1921 e.V.
+                </span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="px-4 py-2">
+              Leitung: <b>Peter Kopp</b> – Kategorie 3 <br />
+              • Selbstwahlstück: Lignum (Thiemo Kraas) <br />
+              • Pflichtstück: A Huntingdon Celebration (Philip Sparke)
+              <br />
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem
+            key="4"
+            value="4"
+            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+          >
+            <AccordionTrigger className="px-4 hover:bg-gray-100">
+              <div className="flex items-center gap-4">
+                <span className="font-medium">11:15</span>
+                <span className="font-freeman">Orchesterverein Horrheim</span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="px-4 py-2">
+              Leitung: <b>Andrea Schneider</b> – Kategorie 3 <br />
+              • Selbstwahlstück: Wings to fly (Thomas Doss) <br />
+              • Pflichtstück: Tangents Angulár (Roland Barret) <br />
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem
+            key="5"
+            value="5"
+            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+          >
+            <AccordionTrigger className="px-4 hover:bg-gray-100">
+              <div className="flex items-center gap-4">
+                <span className="font-medium">12:00</span>
+                <span className="font-freeman">
+                  Musikverein Stadtkapelle Bönnigheim
+                </span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="px-4 py-2">
+              Leitung: <b>Rainer Falk</b> - Kategorie 4 <br />
+              • Selbstwahlstück: Cry of the last Unicorn (Rossano Gallente){" "}
+              <br />
+              • Pflichtstück: Towards a New Horizon (Steven Reinecke) <br />
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </div>
       <h3 className="mb-3 text-lg font-bold">Kontakt</h3>
       <div className="mb-4">
         Bei Fragen wendet Euch bitte an:
