@@ -33,6 +33,7 @@ export default function Wertungsspiel() {
     <div className="mx-auto max-w-4xl p-4">
       <Head>
         <link
+          className="underline"
           rel="canonical"
           href="https://www.kreismusikfest.com/wertungsspiel"
           key="canonical"
@@ -54,8 +55,8 @@ export default function Wertungsspiel() {
             <b>Blasmusikkapellen der Region zu messen</b>.
           </p>
           <p className="mb-4">
-            Das Wertungsspiel findet im <b>Widdumhof</b> in{" "}
-            <b>Korntal-Münchingen</b> statt.
+            Das Wertungsspiel findet in der <b>Albert-Buddenberg Halle</b> im{" "}
+            <b>Widdumhof</b> in <b>Korntal-Münchingen</b> statt.
           </p>
         </div>
         <div className="flex-1">
@@ -87,113 +88,153 @@ export default function Wertungsspiel() {
         <b>unter die Arme greifen</b> möchtest melde dich gerne!
       </p>
       <h3 className="mb-3 text-lg font-bold">Zuhören</h3>
-      <div className="mb-8">
-        <Accordion type="single" collapsible className="rounded-md bg-gray-100">
-          <AccordionItem
-            key="1"
-            value="1"
-            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
-          >
-            <AccordionTrigger className="px-4 hover:bg-gray-100">
-              <div className="flex items-center gap-4">
-                <span className="font-medium">9:00</span>
-                <span className="font-freeman">
-                  Vororchester des Musikverein Stadtkapelle Ditzingen /
-                  Jugendmusikschule Ditzingen
-                </span>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="px-4 py-2">
-              Leitung: <b>Alexander Heinz</b> – Kategorie 2 <br />
-              • A Day at Disneyland (arr. Michael Story) <br />
-              • Rhythm of the World (Markus Götz) <br />
-            </AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem
-            key="2"
-            value="2"
-            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
-          >
-            <AccordionTrigger className="px-4 hover:bg-gray-100">
-              <div className="flex items-center gap-4">
-                <span className="font-medium">9:30</span>
-                <span className="font-freeman">
-                  Jugendblasorchester des Musikverein Stadtkapelle Ditzingen /
-                  Jugendmusikschule Ditzingen
-                </span>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="px-4 py-2">
-              Leitung: <b>Alexander Heinz</b> – Kategorie 3 <br />
-              • Music From Pirates of the caribbean (Klaus Badelt, arr. Michael
-              Brown) <br />
-              • Tarzan Soundtrack Highlights (Phil Collins, arr. Paul Murtha){" "}
-              <br />
-            </AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem
-            key="3"
-            value="3"
-            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
-          >
-            <AccordionTrigger className="px-4 hover:bg-gray-100">
-              <div className="flex items-center gap-4">
-                <span className="font-medium">10:30</span>
-                <span className="font-freeman">
-                  Musikverein Sersheim 1921 e.V.
-                </span>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="px-4 py-2">
-              Leitung: <b>Peter Kopp</b> – Kategorie 3 <br />
-              • Selbstwahlstück: Lignum (Thiemo Kraas) <br />
-              • Pflichtstück: A Huntingdon Celebration (Philip Sparke)
-              <br />
-            </AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem
-            key="4"
-            value="4"
-            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
-          >
-            <AccordionTrigger className="px-4 hover:bg-gray-100">
-              <div className="flex items-center gap-4">
-                <span className="font-medium">11:15</span>
-                <span className="font-freeman">Orchesterverein Horrheim</span>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="px-4 py-2">
-              Leitung: <b>Andrea Schneider</b> – Kategorie 3 <br />
-              • Selbstwahlstück: Wings to fly (Thomas Doss) <br />
-              • Pflichtstück: Tangents Angulár (Roland Barret) <br />
-            </AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem
-            key="5"
-            value="5"
-            className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
-          >
-            <AccordionTrigger className="px-4 hover:bg-gray-100">
-              <div className="flex items-center gap-4">
-                <span className="font-medium">12:00</span>
-                <span className="font-freeman">
-                  Musikverein Stadtkapelle Bönnigheim
-                </span>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="px-4 py-2">
-              Leitung: <b>Rainer Falk</b> - Kategorie 4 <br />
-              • Selbstwahlstück: Cry of the last Unicorn (Rossano Gallente){" "}
-              <br />
-              • Pflichtstück: Towards a New Horizon (Steven Reinecke) <br />
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+      <div className="mb-4">
+        Das Wertungsspiel findet in der <b>Albert-Buddenberg Halle</b> im{" "}
+        <b>Widdumhof</b> in <b>Korntal-Münchingen</b> statt. Hier ist eine
+        Übersicht über den Ablauf:
       </div>
+      <Accordion
+        type="single"
+        collapsible
+        className="mb-4 rounded-md bg-gray-100"
+      >
+        <AccordionItem
+          key="1"
+          value="1"
+          className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+        >
+          <AccordionTrigger className="px-4 hover:bg-gray-100">
+            <div className="flex items-center gap-4">
+              <span className="font-medium">9:00</span>
+              <span className="font-freeman">
+                Vororchester des Musikverein Stadtkapelle Ditzingen /
+                Jugendmusikschule Ditzingen
+              </span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className="px-4 py-2">
+            Leitung: <b>Alexander Heinz</b> – Kategorie 2 <br />
+            • A Day at Disneyland (arr. Michael Story) <br />
+            • Rhythm of the World (Markus Götz) <br />
+            <Link
+              className="underline"
+              href="https://www.mv-ditzingen.de/index.php/orchester/vororchester"
+              target="_blank"
+            >
+              Vororchester des Musikverein Stadtkapelle Ditzingen
+            </Link>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem
+          key="2"
+          value="2"
+          className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+        >
+          <AccordionTrigger className="px-4 hover:bg-gray-100">
+            <div className="flex items-center gap-4">
+              <span className="font-medium">9:30</span>
+              <span className="font-freeman">
+                Jugendblasorchester des Musikverein Stadtkapelle Ditzingen /
+                Jugendmusikschule Ditzingen
+              </span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className="px-4 py-2">
+            Leitung: <b>Alexander Heinz</b> – Kategorie 3 <br />
+            • Music From Pirates of the caribbean (Klaus Badelt, arr. Michael
+            Brown) <br />• Tarzan Soundtrack Highlights (Phil Collins, arr. Paul
+            Murtha) <br />
+            <Link
+              className="underline"
+              href="https://www.mv-ditzingen.de/index.php/orchester/jugenorchester"
+              target="_blank"
+            >
+              Jugendblasorchester des Musikverein Stadtkapelle Ditzingen
+            </Link>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem
+          key="3"
+          value="3"
+          className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+        >
+          <AccordionTrigger className="px-4 hover:bg-gray-100">
+            <div className="flex items-center gap-4">
+              <span className="font-medium">10:30</span>
+              <span className="font-freeman">
+                Musikverein Sersheim 1921 e.V.
+              </span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className="px-4 py-2">
+            Leitung: <b>Peter Kopp</b> – Kategorie 3 <br />
+            • Selbstwahlstück: Lignum (Thiemo Kraas) <br />
+            • Pflichtstück: A Huntingdon Celebration (Philip Sparke)
+            <br />
+            <Link
+              className="underline"
+              href="https://www.mv-sersheim.de/"
+              target="_blank"
+            >
+              Musikverein Sersheim 1921 e.V.
+            </Link>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem
+          key="4"
+          value="4"
+          className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+        >
+          <AccordionTrigger className="px-4 hover:bg-gray-100">
+            <div className="flex items-center gap-4">
+              <span className="font-medium">11:15</span>
+              <span className="font-freeman">Orchesterverein Horrheim</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className="px-4 py-2">
+            Leitung: <b>Andrea Schneider</b> – Kategorie 3 <br />
+            • Selbstwahlstück: Wings to fly (Thomas Doss) <br />
+            • Pflichtstück: Tangents Angulár (Roland Barret) <br />
+            <Link
+              className="underline"
+              href="https://www.orchesterverein-horrheim.de/"
+              target="_blank"
+            >
+              Orchesterverein Horrheim
+            </Link>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem
+          key="5"
+          value="5"
+          className="bg-gray-50 first:rounded-t-md last:rounded-b-md"
+        >
+          <AccordionTrigger className="px-4 hover:bg-gray-100">
+            <div className="flex items-center gap-4">
+              <span className="font-medium">12:00</span>
+              <span className="font-freeman">
+                Musikverein Stadtkapelle Bönnigheim
+              </span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className="px-4 py-2">
+            Leitung: <b>Rainer Falk</b> - Kategorie 4 <br />• Selbstwahlstück:
+            Cry of the last Unicorn (Rossano Gallente) <br />
+            • Pflichtstück: Towards a New Horizon (Steven Reinecke) <br />
+            <Link
+              className="underline"
+              href="https://xn--mv-bnnigheim-7ib.de/new/"
+              target="_blank"
+            >
+              Musikverein Stadtkapelle Bönnigheim
+            </Link>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
       <h3 className="mb-3 text-lg font-bold">Kontakt</h3>
       <div className="mb-4">
         Bei Fragen wendet Euch bitte an:
