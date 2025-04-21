@@ -582,7 +582,7 @@ export default function Programm() {
         },
         {
           time: "17:00",
-          title: "Jugendorchester",
+          title: "Jugendkapelle Schwieberdingen",
           description: (
             <>
               <figure>
@@ -597,10 +597,8 @@ export default function Programm() {
                 </figcaption>
               </figure>
               <p className="mt-4">
-                Das <b>Lieder- und Vororchester</b> der Musikschule
-                Schwieberdingen sowie die <b>Jugendkapelle</b> des Musikvereins
-                Schwieberdingen eröffnen den letzten Nachmittag am
-                Kreismusikfest.
+                Die <b>Jugendkapelle</b> des Musikvereins Schwieberdingen
+                eröffnet den letzten Nachmittag am Kreismusikfest.
               </p>
             </>
           ),
