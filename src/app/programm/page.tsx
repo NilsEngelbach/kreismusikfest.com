@@ -220,6 +220,10 @@ export default function Programm() {
                     Jugendfeuerwehr Schwieberdingen
                   </a>
                 </b>{" "}
+                und{" "}
+                <b>
+                  <a href="https://www.auto-scheller.de/">Auto Scheller</a>
+                </b>{" "}
                 können sich die Kinder austoben. Auf der Bühne gibt es ein{" "}
                 <b>buntes Programm der Musikschule</b>. Neben dem{" "}
                 <b>Vororchester</b>, den <b>Bläser- und Streicherklassen</b> und
@@ -406,7 +410,7 @@ export default function Programm() {
           ),
         },
         {
-          time: "15:15",
+          time: "15:00",
           title: "Musikverein Kleinglattbach",
           description: (
             <>
@@ -442,7 +446,7 @@ export default function Programm() {
           ),
         },
         {
-          time: "17:30",
+          time: "17:15",
           title: "Musikverein Münchingen",
           description: (
             <>
@@ -475,7 +479,7 @@ export default function Programm() {
           ),
         },
         {
-          time: "19:45",
+          time: "19:30",
           title: "Musikverein Unterriexingen",
           description: (
             <>
