@@ -670,16 +670,16 @@ export default function Programm() {
               </figure>
               <p className="my-4">
                 In diesem Jahr wird das Showprogramm durch mitreißende
-                Tanzeinlagen der Tanzschule Tanzraum bereichert.
+                Tanzeinlagen der Tanzschule TanzTraum bereichert.
               </p>
               <figure>
                 <Image
                   src="/logos/tanz_raum.jpg"
-                  alt="Tanzschule Tanzraum"
+                  alt="Tanzschule TanzTraum"
                   width={812}
                   height={257}
                 />
-                <figcaption>Tanzschule Tanzraum</figcaption>
+                <figcaption>Tanzschule TanzTraum</figcaption>
               </figure>
             </>
           ),

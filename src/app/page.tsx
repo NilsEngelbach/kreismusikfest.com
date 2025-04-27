@@ -645,7 +645,7 @@ export default function Home() {
           <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
             <Link href="/programm">
               <Image
-                alt="Tanzraum"
+                alt="TanzTraum"
                 src="/logos/tanz_raum.jpg"
                 width={812}
                 height={257}
