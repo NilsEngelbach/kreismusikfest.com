@@ -355,6 +355,16 @@ export default function Festumzug() {
           <Link
             className="underline"
             target="_blank"
+            href="https://www.strohgaeu-sinfonieorchester.de/"
+          >
+            Strohgäu Sinfonieorchester
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link
+            className="underline"
+            target="_blank"
             href="https://www.tc-schwieberdingen.de/"
           >
             Tennisclub Schwieberdingen
