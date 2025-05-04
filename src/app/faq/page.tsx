@@ -111,7 +111,8 @@ export default function Programm() {
           <p>
             Ja, sowohl an der Kasse als auch in der Bar kann mit Karte gezahlt
             werden. Alle gänigen Karten werden unterstützt und es gibt keinen
-            Mindestbetrag. An der Abendkasse am Freitag ist keine bargedlose Bezahlung möglich.
+            Mindestbetrag. An der Abendkasse am Freitag ist keine bargedlose
+            Bezahlung möglich.
           </p>
         </>
       ),
