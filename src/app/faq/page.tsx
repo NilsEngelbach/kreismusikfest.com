@@ -199,6 +199,10 @@ export default function Programm() {
           </AccordionTrigger>
           <AccordionContent className="px-4 py-2">
             <p>
+              Den Festplatz erreicht man am besten über die Haltestellen{" "}
+              <b>Mitte</b>, <b>Bahnhof</b> und <b>Glemstal</b>.
+            </p>
+            <p className="mt-2">
               <b>Wichtiger Hinweis</b>: Am Sonntag kommt es aufgrund des
               Festumzugs zwischen 13:00 und 16:00 Uhr zu Änderungen im
               Linienverlauf und Straßensperrungen in Schwieberdingen. Eine

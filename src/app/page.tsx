@@ -390,6 +390,17 @@ export default function Home() {
             </Link>
           </div>
           <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+            <Link href="https://g.co/kgs/bZqNNkX" target="_blank">
+              <Image
+                alt="C&L Baumaschinen"
+                src="/sponsoren/c-und-l.png"
+                width={1263}
+                height={632}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </Link>
+          </div>
+          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
             <Link
               href="https://www.vrbank-lb.de/startseite.html"
               target="_blank"

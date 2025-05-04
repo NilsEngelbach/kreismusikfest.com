@@ -118,7 +118,7 @@ export default function Programm() {
             target="_blank"
             className="mb-6 mt-2 block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-lg text-white hover:bg-orange-600"
           >
-            Tickets
+            🎟️ Tickets
           </Link>
         </>
       ),

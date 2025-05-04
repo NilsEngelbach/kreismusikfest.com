@@ -37,7 +37,7 @@ export default function Festumzug() {
       <div className="flex flex-col md:flex-row">
         <div className="flex-1">
           <p className="mb-4">
-            Begleitet von <b>befreundeten Musikvereinen, Gruppen</b> und{" "}
+            Begleitet von <b>über 30 befreundeten Musikvereinen, Gruppen</b> und{" "}
             <b>begeisterten Zuschauern</b> ziehen wir durch die Straßen von
             Schwieberdingen, um das 100-jährige Bestehen des Musikverein
             Schwieberdingen zu feiern. Dieses besondere Jubiläum bietet uns
@@ -397,9 +397,9 @@ export default function Festumzug() {
         <Link
           className="underline"
           target="_blank"
-          href="https://www.tsv-schwieberdingen.de/abteilungen/turnen"
+          href="http://www.deutscher-hilfsdienst-ludwigsburg.de/"
         >
-          Deutschen Hilfsdienst, Kreisverein Ludwigsburg e.V.
+          Deutschen Hilfsdienst - Kreisverein Ludwigsburg e.V.
         </Link>{" "}
         und dem{" "}
         <Link
@@ -413,9 +413,70 @@ export default function Festumzug() {
       </p>
 
       <h3 className="mb-3 text-lg font-bold">Strecke</h3>
-      <p className="mb-6">
-        Sobald der genaue Ablauf feststeht stellen wir ihn hier für Euch bereit.
+      <p className="mb-2">
+        Der Festumzug startet um <b>13 Uhr</b> im <b>Vöhinger Weg</b> und führt
+        über die <b>Stuttgarter Straße</b> und die <b>Bahnhofstraße</b> bis zum{" "}
+        <b>Festplatz</b>.
       </p>
+      <iframe
+        width="100%"
+        height="900px"
+        frameBorder="0"
+        allowFullScreen
+        allow="geolocation"
+        src="//umap.openstreetmap.de/de/map/festumzug-kreismusikfest-2025_91928?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
+      ></iframe>
+      <p>
+        <Link
+          target="_blank"
+          href="//umap.openstreetmap.de/de/map/festumzug-kreismusikfest-2025_91928?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
+          className="mt-2 block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
+        >
+          Vollbildanzeige
+        </Link>
+      </p>
+
+      <h3 className="mb-3 mt-6 text-lg font-bold">Hinweise für Anwohner</h3>
+      <div className="mb-6 flex flex-col md:flex-row">
+        <div className="flex-1">
+          <p className="mb-2">
+            Aufgrund des Festumzugs am Sonntag, 11.05.2025 sind für den Zeitraum
+            13:00 Uhr bis zirka 16:00 Uhr mehrere Straßen in Schwieberdingen
+            gesperrt und Umleitungen eingerichtet. Auch im Busverkehr kommt es
+            von 13:00 bis 16:00 zu Einschränkungen und Anpassungen am
+            Linienverlauf. <br />
+          </p>
+          <p>
+            Alle Informationen dazu gibt es auf der{" "}
+            <Link
+              className="underline"
+              target="_blank"
+              href="https://www.schwieberdingen.de/23805415.html"
+            >
+              Webseite der Gemeinde Schwieberdingen
+            </Link>
+            .
+          </p>
+        </div>
+        <div className="flex-1">
+          <Link
+            className="underline"
+            target="_blank"
+            href="https://www.schwieberdingen.de/23805415.html"
+          >
+            <div className="flex transform items-center justify-center rounded bg-white shadow-md transition-transform md:hover:scale-105">
+              <Image
+                className="rounded"
+                alt="Festumzug - Straßensperrungen & Umleitungen"
+                src="/festumzug_straßensperren.jpg"
+                height={2107}
+                width={1434}
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </div>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
