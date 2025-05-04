@@ -54,6 +54,84 @@ export default function Programm() {
         </>
       ),
     },
+    {
+      question: 'Wo bekomme ich Tickets für die "Blech X-Plosion"?',
+      answer: (
+        <>
+          {" "}
+          <p className="mb-2">
+            Für das Konzert von{" "}
+            <b>Fättes Blech & Druckluft am Freitag, 09.05.2025</b> können
+            Tickets auf{" "}
+            <Link
+              className="underline"
+              href="https://mv-schwieberdingen.de/tickets"
+              target="_blank"
+            >
+              https://mv-schwieberdingen.de/tickets
+            </Link>{" "}
+            erworben werden.
+          </p>
+        </>
+      ),
+    },
+    {
+      question: 'Gibt es eine Abendkasse für die "Blech X-Plosion"?',
+      answer: (
+        <>
+          <p>
+            Falls noch Restkarten vorhanden sind können diese an der Abendkasse
+            erworben werden. Um auf Nummer sicher zu gehen, also lieber im VVK
+            auf{" "}
+            <Link
+              className="underline"
+              href="https://mv-schwieberdingen.de/tickets"
+              target="_blank"
+            >
+              https://mv-schwieberdingen.de/tickets
+            </Link>{" "}
+            die Tickets sichern!
+          </p>
+        </>
+      ),
+    },
+    // {
+    //   question:
+    //     "Ist das Gelände barrierefrei für Rollstuhlfahrer oder Kinderwägen?",
+    //   answer: <></>,
+    // },
+    // {
+    //   question: "Wird vegetarisches oder veganes Essen angeboten?",
+    //   answer: <></>,
+    // },
+    {
+      question: "Ist bargeldloses Bezahlen möglich?",
+      answer: (
+        <>
+          <p>
+            Ja, sowohl an der Kasse als auch in der Bar kann mit Karte gezahlt
+            werden. Alle gänigen Karten werden unterstützt und es gibt keinen
+            Mindestbetrag. An der Abendkasse am Freitag ist keine bargedlose Bezahlung möglich.
+          </p>
+        </>
+      ),
+    },
+    {
+      question:
+        "Wie kann ich den Musikverein bei den Vorbereitungen unterstützen?",
+      answer: (
+        <>
+          <p>
+            Jede Hilfe ist herzlich willkommen! Wir freuen uns über tatkräftige
+            Unterstützung vor Ort aber auch über eine Kuchenspende. Unter{" "}
+            <Link className="underline" href="/kontakt">
+              Kontakt
+            </Link>{" "}
+            sind alle Ansprechpartner aufgelistet.
+          </p>
+        </>
+      ),
+    },
   ];
 
   return (
@@ -72,7 +150,8 @@ export default function Programm() {
         Fest zu gewährleisten, haben wir eine Liste der{" "}
         <b>häufigsten Fragen und Antworten</b> zusammengestellt. Sollten Ihr
         dennoch weitere Fragen haben, stehen wir Euch selbstverständlich gerne
-        zur Verfügung.
+        zur Verfügung - per E-Mail an <i>vorstand@mv-schwieberdingen.de</i> oder
+        via DM auf Facebook & Instagram.
       </p>
       <Accordion type="single" collapsible className="rounded-md bg-gray-100">
         {faqs.map((faq, faqIndex) => (
