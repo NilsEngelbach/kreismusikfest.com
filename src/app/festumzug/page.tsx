@@ -414,7 +414,7 @@ export default function Festumzug() {
 
       <h3 className="mb-3 text-lg font-bold">Strecke</h3>
       <p className="mb-2">
-        Der Festumzug startet um <b>13 Uhr</b> im <b>Vöhinger Weg</b> und führt
+        Der Festumzug startet um <b>14 Uhr</b> im <b>Vöhinger Weg</b> und führt
         über die <b>Stuttgarter Straße</b> und die <b>Bahnhofstraße</b> bis zum{" "}
         <b>Festplatz</b>.
       </p>
