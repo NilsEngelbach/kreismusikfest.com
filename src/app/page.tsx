@@ -1,731 +1,177 @@
 import Image from "next/image";
-import Countdown from "./countdown";
 import Link from "next/link";
-import Head from "next/head";
 
 export const metadata = {
-  title:
-    "Kreismusikfest Ludwigsburg 2025 | 9.-12. Mai | Festplatz Schwieberdingen",
+  title: "Kreismusikfest Ludwigsburg 2025 – Rückblick",
   description:
-    "Vom 09. bis 12.05.2025 findet das Kreismusikfest Ludwigsburg auf dem Festplatz in Schwieberdingen statt. Neben dem Wertungsspiel für Orchester gibt es an ein buntes Programm für Groß und Klein.",
+    "Rückblick auf das Kreismusikfest Ludwigsburg 2025 – vier unvergessliche Tage Blasmusik in Schwieberdingen.",
   alternates: { canonical: "https://www.kreismusikfest.com" },
   openGraph: {
-    title: "Kreismusikfest Ludwigsburg 2025",
+    title: "Kreismusikfest Ludwigsburg 2025 – Rückblick",
     description:
-      "Vom 09. bis 12.05.2025 findet das Kreismusikfest Ludwigsburg auf dem Festplatz in Schwieberdingen statt. Neben dem Wertungsspiel für Orchester gibt es ein buntes Programm für Groß und Klein.",
+      "Rückblick auf das Kreismusikfest Ludwigsburg 2025 – vier unvergessliche Tage Blasmusik in Schwieberdingen.",
     url: "https://www.kreismusikfest.com",
-    images: [
-      {
-        url: "https://www.kreismusikfest.com/blech-x-plosion.webp",
-        width: 1500,
-        height: 844,
-      },
-    ],
   },
 };
+
+const images = [
+  { src: "/rückblick/NE_01244.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_01307.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_01542.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_01567.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_01989.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_02274.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_02302.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_02343.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_02484.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_02525.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/NE_02774.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/DSC_4843.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/DSCF2320.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/DSCF2383 (1).jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/A7404184.jpg", alt: "Kreismusikfest 2025" },
+  { src: "/rückblick/A7404192.jpg", alt: "Kreismusikfest 2025" },
+  {
+    src: "/rückblick/WhatsApp Image 2026-05-08 at 13.55.18.jpeg",
+    alt: "Kreismusikfest 2025",
+  },
+  {
+    src: "/rückblick/WhatsApp Image 2026-05-08 at 13.55.18 (1).jpeg",
+    alt: "Kreismusikfest 2025",
+  },
+];
 
 export default function Home() {
   return (
     <main>
-      <Head>
-        <link
-          rel="canonical"
-          href="https://www.kreismusikfest.com"
-          key="canonical"
-        />
-      </Head>
-      {/* Highlights Section */}
-      <section className="bg-gray-50 p-4 md:p-6">
-        <h2 className="mb-6 text-center text-2xl font-semibold">Highlights</h2>
-
-        {/* Feature Box */}
-        <Link href="/programm" className="cursor-pointer">
-          <div className="relative w-full transform rounded-lg bg-white p-2 shadow-sm transition-transform md:mb-6 md:p-4 md:hover:scale-105">
-            <Image
-              src="/blech-x-plosion.webp"
-              alt="Blech X-Plosion 2025"
-              width={1500}
-              height={844}
-              priority
-            />
-          </div>
-        </Link>
-
-        <Countdown />
-
-        {/* Event Grid - Mobile: Stack, Desktop: 2 columns */}
-        <div className="mt-6 space-y-6 md:grid md:grid-cols-2 md:gap-6 md:space-y-0">
-          <Link
-            href="/programm"
-            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform md:hover:scale-105"
-          >
-            <div className="absolute top-0 z-10 -ml-[16px] -mt-[16px] rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white">
-              Freitag, 09.05.2025
-            </div>
-            <div className="flex flex-row items-center justify-center gap-2">
-              <div className="relative flex-1 p-2">
-                <Image
-                  className="max-h-40 md:max-h-56"
-                  alt="Blech X-Plosion 2025"
-                  src="/blech-2.svg"
-                  height={600}
-                  width={1080}
-                ></Image>
-              </div>
-            </div>
-          </Link>
-
-          <Link
-            href="/programm"
-            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform md:hover:scale-105"
-          >
-            <div className="absolute top-0 z-10 -ml-[16px] -mt-[16px] rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white">
-              Samstag, 10.05.2025
-            </div>
-            <div className="flex flex-col items-center items-stretch justify-center pt-4 xs:flex-row">
-              <div className="relative flex flex-col justify-between p-2">
-                <Image
-                  className="max-h-16 flex-1 md:max-h-24"
-                  alt="Knutschfleck"
-                  src="/knutschfleck.svg"
-                  height={400}
-                  width={1080}
-                ></Image>
-                <p className="mt-2 text-center font-freeman text-orange-500">
-                  <span className="md:text-md text-sm">Party mit</span>
-                  <br />
-                  <span className="text-md md:text-lg">Knutschfleck</span>
-                </p>
-              </div>
-              <div className="relative flex flex-col justify-between p-2">
-                <Image
-                  className="max-h-24 flex-1"
-                  alt="Familiennachmittag"
-                  src="/familiennachmittag.svg"
-                  height={880}
-                  width={880}
-                ></Image>
-                <p className="mt-2 text-center font-freeman text-orange-500">
-                  <span className="md:text-md text-sm">
-                    Für Groß und Klein:
-                  </span>
-                  <br />
-                  <span className="text-md md:text-lg">Familiennachmittag</span>
-                </p>
-              </div>
-              <div className="relative flex flex-col justify-between p-2 md:hidden lg:flex">
-                <Image
-                  className="max-h-24 flex-1"
-                  alt="Wertungsspiel"
-                  src="/wertungsspiel.svg"
-                  height={600}
-                  width={1080}
-                ></Image>
-                <p className="mt-2 text-center font-freeman text-orange-500">
-                  <span className="md:text-md text-sm">Für Orchester:</span>
-                  <br />
-                  <span className="text-md md:text-lg">Wertungsspiel</span>
-                </p>
-              </div>
-            </div>
-          </Link>
-
-          <Link
-            href="/programm"
-            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform md:hover:scale-105"
-          >
-            <div className="absolute top-0 z-10 -ml-[16px] -mt-[16px] rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white">
-              Sonntag, 11.05.2025
-            </div>
-            <div className="flex flex-col items-center items-stretch justify-center pt-4 xs:flex-row">
-              <div className="relative flex flex-col justify-between p-2">
-                <Image
-                  className="max-h-24 flex-1"
-                  alt="Festumzug"
-                  src="/festumzug.svg"
-                  height={600}
-                  width={1080}
-                ></Image>
-                <p className="mt-2 text-center font-freeman text-orange-500">
-                  <span className="md:text-md text-sm">Großer</span>
-                  <br />
-                  <span className="text-md md:text-lg">Festumzug</span>
-                </p>
-              </div>
-              <div className="relative flex flex-col justify-between p-2">
-                <Image
-                  className="max-h-24 flex-1"
-                  src="/mvs-logo-100.svg"
-                  alt="100 Jahre Musikverein Schwieberdingen"
-                  width={1080}
-                  height={700}
-                />
-                <p className="mt-2 text-center font-freeman text-orange-500">
-                  <span className="md:text-md text-sm">Jubiläum 100 Jahre</span>
-                  <br />
-                  <span className="text-md md:text-lg">MV Schwieberdingen</span>
-                </p>
-              </div>
-              <div className="relative flex flex-col justify-between p-2 md:hidden lg:flex">
-                <Image
-                  className="max-h-24 flex-1"
-                  alt="Feuriger Elias"
-                  src="/zug.svg"
-                  height={830}
-                  width={830}
-                ></Image>
-                <p className="mt-2 text-center font-freeman text-orange-500">
-                  <span className="md:text-md text-sm">Anreisen mit dem</span>
-                  <br />
-                  <span className="text-md md:text-lg">Feurigen Elias</span>
-                </p>
-              </div>
-            </div>
-          </Link>
-
-          <Link
-            href="/programm"
-            className="relative flex h-full cursor-pointer items-center rounded-lg bg-white p-2 shadow-sm transition-transform md:hover:scale-105"
-          >
-            <div className="absolute top-0 z-10 -ml-[16px] -mt-[16px] rounded bg-orange-500 px-3 py-1 font-freeman text-xl text-white">
-              Montag, 12.05.2025
-            </div>
-            <div className="flex flex-col items-center items-stretch justify-center pt-4 xs:flex-row">
-              <div className="relative flex flex-col justify-between p-1 md:p-2">
-                <Image
-                  className="max-h-24 flex-1"
-                  alt="Mittagstisch"
-                  src="/mittagstisch.svg"
-                  height={800}
-                  width={1080}
-                ></Image>
-                <p className="mt-2 text-center font-freeman text-orange-500">
-                  <span className="md:text-md text-sm">
-                    Sparen und genießen beim
-                  </span>
-                  <br />
-                  <span className="text-md md:text-lg">Mittagstisch</span>
-                </p>
-              </div>
-              <div className="relative flex flex-col justify-between p-1 md:p-2">
-                <Image
-                  className="max-h-24 flex-1"
-                  alt="Montagabendshow"
-                  src="/montagabend.svg"
-                  height={880}
-                  width={1080}
-                ></Image>
-                <p className="mt-2 text-center font-freeman text-orange-500">
-                  <span className="md:text-md text-sm">
-                    Festausklang mit der
-                  </span>
-                  <br />
-                  <span className="text-md md:text-lg">Montagabendshow</span>
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
-
-        <div className="mt-6 flex w-full items-center justify-center">
-          <Link
-            href="/programm"
-            className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-          >
-            Das komplette Programm
-          </Link>
-        </div>
-      </section>
-
-      {/* Competition Section */}
-      <section className="border-t bg-white p-4 md:p-6">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-2 text-lg">
-            Blasmusik Kreisverband Ludwigsburg e.V.
+      {/* Rückblick Text */}
+      <section className="bg-white p-4 md:p-8">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="mb-2 text-center text-lg text-gray-500">
+            09.–12. Mai 2025 · Schwieberdingen
           </h2>
-          <h3 className="mb-6 text-xl font-bold">Wertungsspiel</h3>
-          <div className="mb-4 flex w-full flex-col-reverse items-center gap-4 text-justify md:flex-row">
-            <div className="flex-1">
-              <figure className="mb-4 transform transition-transform md:mb-0 md:hover:scale-105">
-                <Link href="/wertungsspiel">
-                  <Image
-                    alt="Wertungsspiel"
-                    src="/orchestra.jpg"
-                    height={1000}
-                    width={667}
-                  ></Image>
-                </Link>
-                <figcaption className="text-center text-sm text-gray-600">
-                  Beim Wertungsspiel können sich die Kapellen messen
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex-1">
-              <p className="mb-4">
-                Der <b>Blasmusik-Kreisverband Ludwigsburg</b> lädt herzlich zum{" "}
-                <b>Wertungsspiel am Samstag 10. Mai 2025</b> ein. Ziel des
-                Wertungsspiels ist es, den <b>musikalischen Austausch</b> zu
-                fördern, die <b>musikalische Qualität zu steigern</b> und den
-                teilnehmenden Ensembles wertvolle Rückmeldungen von erfahrenen
-                Fachjuroren zu geben. Das Wertungsspiel ist eine ausgezeichnete
-                Gelegenheit für alle Blasorchester, Jugendblasorchester,
-                Solisten, Ensembles und Bläserklassen, ihre Fähigkeiten unter
-                Beweis zu stellen, <b>neue Impulse zu erhalten</b> und sich mit
-                anderen <b>Blasmusikkapellen der Region zu messen</b>.
-              </p>
-              <p>
-                Das Wertungsspiel findet im <b>Widdumhof</b> in{" "}
-                <b>Korntal-Münchingen</b> statt.
-              </p>
-            </div>
+          <h1 className="mb-8 text-center font-freeman text-3xl text-orange-500 md:text-4xl">
+            Rückblick Kreismusikfest 2025
+          </h1>
+          <div className="space-y-4 text-justify leading-relaxed text-gray-700">
+            <p>
+              Vier Tage lang stand die Blasmusik im Mittelpunkt: Vom{" "}
+              <b>9. bis 12. Mai 2025</b> feierte der Blasmusik-Kreisverband
+              Ludwigsburg sein großes Kreismusikfest 2025. Musikerinnen und
+              Musiker aus dem gesamten Landkreis kamen zusammen, um ihr Können
+              zu präsentieren, sich auszutauschen und gemeinsam zu feiern.
+              Veranstaltungsort war das Musikfest anlässlich des{" "}
+              <b>100. Jubiläums des Musikverein Schwieberdingen</b>.
+            </p>
+            <p>
+              Der Auftakt am Freitagabend stand ganz im Zeichen{" "}
+              <b>mitreißender Brassmusik</b>: Unter dem Motto „Blech X-Plosion"
+              heizten <b>Druckluft</b> und <b>Fättes Blech</b> dem Publikum
+              ordentlich ein. Mit energiegeladenen Rhythmen, präzisem
+              Zusammenspiel und humorvoller Bühnenshow sorgten die beiden
+              Ensembles für eine ausgelassene Stimmung und einen unvergesslichen
+              Start ins Festwochenende.
+            </p>
+            <p>
+              Am Samstag folgten die <b>Wertungsspiele</b>, bei denen zahlreiche
+              Orchester ihr musikalisches Können unter Beweis stellten. Die Jury
+              bewertete die Beiträge nach Klangqualität, Interpretation und
+              technischer Ausführung. Punktsieger wurde der{" "}
+              <b>Orchesterverein Horrheim</b>, der mit seiner Darbietung die
+              höchste Bewertung des Tages erzielte und für seine musikalische
+              Leistung großen Applaus erhielt.
+            </p>
+            <p>
+              Der Sonntag war traditionell der Tag für die ganze Familie: Ein{" "}
+              <b>farbenfroher Festumzug</b> durch die Straßen lockte zahlreiche
+              Besucher an. Musikvereine aus dem gesamten Landkreis präsentierten
+              sich in Uniform, mit klingendem Spiel und bester Stimmung. Der
+              Umzug war ein Höhepunkt des Wochenendes und zeigte die Vielfalt
+              und den Gemeinschaftsgeist der Blasmusikszene in der Region. Dies
+              wurde auch im anschließenden <b>Massenchor</b> deutlich: alle
+              beteiligten Musikgruppen führten gemeinsam die Auftragskomposition
+              zum Kreismusikfest <b>„Ludwigsburg unitis"</b> auf.
+            </p>
+            <p>
+              Der Blasmusik-Kreisverband Ludwigsburg und der Musikverein
+              Schwieberdingen blicken auf ein rundum gelungenes Fest zurück
+              und danken allen Beteiligten für die gute Zusammenarbeit. Das
+              Kreismusikfest setzte ein eindrucksvolles Zeichen für die
+              Lebendigkeit und Begeisterung der Blasmusik in der Region.
+            </p>
           </div>
-          <Link
-            href="/wertungsspiel"
-            className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-          >
-            Informationen zum Wertungsspiel
-          </Link>
         </div>
       </section>
 
-      {/* Anniversary Section */}
-      <section className="border-t bg-gray-50 p-4 md:p-6">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-2 text-lg">Musikverein Schwieberdingen e.V.</h2>
-          <h3 className="mb-6 text-xl font-bold">Jubiläum 100 Jahre</h3>
-
-          <div className="mb-4 flex flex-col items-center gap-4 md:flex-row">
-            <div className="flex-1 text-justify">
-              <p className="mb-4">
-                Seit seiner <b>Gründung im Jahr 1925</b> hat der Musikverein
-                Schwieberdingen die lokale Kultur durch seine Musik bereichert
-                und Generationen von Musikliebhabern begeistert. Von festlichen
-                Konzerten bis hin zu stimmungsvollen Festen bedient der
-                Musikverein <b>alle Facetten der Blasmusik</b>.
-              </p>
-              <p>
-                Das kommende Jubiläum ist nicht nur eine Gelegenheit, auf eine{" "}
-                <b>reiche Geschichte zurückzublicken</b>, sondern auch ein
-                Moment des Stolzes und der Freude. Wir laden alle herzlich ein,
-                mit uns dieses{" "}
-                <b>bedeutende Jubiläum beim Kreismusikfest zu feiern</b>.
-              </p>
-            </div>
-            <div className="flex-1">
-              <figure className="transform transition-transform md:hover:scale-105">
-                <Link href="https://www.mv-schwieberdingen.de" target="_blank">
-                  <Image
-                    alt="Musikverein Schwieberdingen 100 Jahre"
-                    src="/MVS-100.png"
-                    height={1080}
-                    width={960}
-                  ></Image>
-                </Link>
-                <figcaption className="text-sm text-gray-600">
-                  Jugendkapelle, Blasorchester und Oldies des Musikverein
-                  Schwieberdingen
-                </figcaption>
-              </figure>
-            </div>
+      {/* Photo Gallery */}
+      <section className="border-t bg-gray-50 p-4 md:p-8">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-6 text-center font-freeman text-2xl text-orange-500">
+            Impressionen
+          </h2>
+          <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3">
+            {images.map((img, i) => (
+              <div
+                key={i}
+                className="relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-200"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover transition-transform duration-300 hover:scale-105"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
+              </div>
+            ))}
           </div>
-
-          <Link
-            href="https://www.mv-schwieberdingen.de"
-            target="_blank"
-            className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-          >
-            Homepage Musikverein Schwieberdingen
-          </Link>
         </div>
       </section>
 
-      {/* Sponsors Section */}
-      <section className="border-t bg-white p-4 text-center md:p-6">
-        <h2 className="mb-2 text-lg">Vielen Dank an alle</h2>
-        <h3 className="mb-6 text-xl font-bold">Sponsoren & Unterstützer</h3>
-        <div className="mx-auto mb-4 grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
-          {/* Platin */}
-          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-6 shadow-md transition-transform md:hover:scale-105">
-            <Link href="http://brosi-landmetzgerei.de/" target="_blank">
-              <Image
-                alt="Landmetzgerei Werner Brosi"
-                src="/sponsoren/Landmetzgerei_Brosi.png"
-                width={418}
-                height={150}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-6 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://walker-anhaenger.de/" target="_blank">
-              <Image
-                alt="Walker Anhänger-Center"
-                src="/sponsoren/Walker_Anhaenger.png"
-                width={400}
-                height={133}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-0 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://www.dillmann-gartentechnik.de/" target="_blank">
-              <Image
-                alt="Dillmann Gartentechnik"
-                src="/sponsoren/Dillmann.png"
-                width={1280}
-                height={786}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-0 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://www.pflege-schwieberdingen.de/" target="_blank">
-              <Image
-                alt="Schützinger Häusliche Pflege"
-                src="/sponsoren/schützinger.png"
-                width={180}
-                height={180}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://g.co/kgs/bZqNNkX" target="_blank">
-              <Image
-                alt="C&L Baumaschinen"
-                src="/sponsoren/c-und-l.png"
-                width={1263}
-                height={632}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="col-span-2 flex min-h-60 transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
+      {/* Organization Links */}
+      <section className="border-t bg-white p-4 md:p-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="mb-6 font-freeman text-2xl text-orange-500">
+            Veranstalter
+          </h2>
+          <div className="flex flex-col gap-6 md:flex-row">
             <Link
-              href="https://www.vrbank-lb.de/startseite.html"
+              href="https://www.bvbw-ludwigsburg.de/"
               target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-1 flex-col items-center gap-4 rounded-lg border p-6 shadow-sm transition-shadow hover:shadow-md"
             >
-              <Image
-                alt="VR-Bank Ludwigsburg"
-                src="/sponsoren/VR_Bank_Ludwigsburg.png"
-                width={686}
-                height={189}
-                style={{ objectFit: "contain" }}
-              ></Image>
+              <div className="relative h-16 w-full">
+                <Image
+                  src="/kvlb-logo.svg"
+                  alt="Blasmusik Kreisverband Ludwigsburg"
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
+              <span className="font-freeman text-orange-500">
+                Blasmusik-Kreisverband Ludwigsburg
+              </span>
             </Link>
-          </div>
-
-          {/* Silber */}
-
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://www.auto-scheller.de/" target="_blank">
-              <Image
-                alt="Auto Scheller"
-                src="/sponsoren/Scheller.png"
-                width={476}
-                height={99}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://www.flegl.online/" target="_blank">
-              <Image
-                alt="Flegl und Lohrer"
-                src="/sponsoren/Flegl_und_Lohrer.jpg"
-                width={2000}
-                height={2000}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://www.zimmerei-schinz.de/" target="_blank">
-              <Image
-                alt="Zimmerei Schinz"
-                src="/sponsoren/schinz-markgroeningen.png"
-                width={588}
-                height={1230}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Image
-              alt="Eberle Bauservice"
-              src="/sponsoren/eberle.gif"
-              width={300}
-              height={200}
-            ></Image>
-          </div>
-
-          {/* Bronze */}
-
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://www.malerburkhardt.de/" target="_blank">
-              <Image
-                alt="Maler Burkhardt"
-                src="/sponsoren/Maler_Burkhardt.png"
-                width={577}
-                height={199}
-              ></Image>
-            </Link>
-          </div>
-
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
             <Link
-              href="https://www.planitzer.de/truck-service.html"
+              href="https://mv-schwieberdingen.de/"
               target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-1 flex-col items-center gap-4 rounded-lg border p-6 shadow-sm transition-shadow hover:shadow-md"
             >
-              <Image
-                alt="Planitzer"
-                src="/sponsoren/Planitzer.png"
-                width={700}
-                height={263}
-              ></Image>
+              <div className="relative h-16 w-full">
+                <Image
+                  src="/mvs-logo-100.svg"
+                  alt="Musikverein Schwieberdingen"
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
+              <span className="font-freeman text-orange-500">
+                Musikverein Schwieberdingen e.V.
+              </span>
             </Link>
           </div>
-
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="http://www.montagnese.de/" target="_blank">
-              <Image
-                alt="Montagnese"
-                src="/sponsoren/Montagnese.png"
-                width={1504}
-                height={752}
-              ></Image>
-            </Link>
-          </div>
-
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://www.amschlosshof.de/" target="_blank">
-              <Image
-                alt="Reisebüro am Schlosshof"
-                src="/sponsoren/reisebüro_am_schlosshof.jpg"
-                width={1102}
-                height={391}
-              ></Image>
-            </Link>
-          </div>
-
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="https://widmann.graphicstudio.de/" target="_blank">
-              <Image
-                alt="Walter Widmann GmbH"
-                src="/sponsoren/widmann.png"
-                width={262}
-                height={81}
-              ></Image>
-            </Link>
-          </div>
-        </div>
-        <div className="mx-auto mt-4 max-w-4xl text-center">
-          <Link
-            href="/kontakt"
-            className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-          >
-            Sponsor werden
-          </Link>
-        </div>
-      </section>
-
-      {/* Anniversary Section */}
-      <section className="border-t bg-gray-50 p-4 text-center md:p-6">
-        <h2 className="mb-2 text-lg">Über 30 Stunden Live Musik</h2>
-        <h3 className="mb-6 text-xl font-bold">Auf der Bühne</h3>
-
-        <div className="mx-auto mb-4 grid max-w-4xl grid-cols-2 justify-center gap-4 md:grid-cols-4">
-          <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Fättes Blech"
-                src="/logos/Fättes-Blech.png"
-                width={1136}
-                height={403}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Druckluft"
-                src="/logos/Druckluft.png"
-                width={3326}
-                height={1239}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Knutschfleck"
-                src="/logos/Knutschfleck.png"
-                width={1209}
-                height={422}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="col-span-2 flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Jazz für Kinder"
-                src="/logos/jazz_für_kinder.svg"
-                width={639}
-                height={108}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Musikverein Ahausen"
-                src="/logos/MV-Ahausen.png"
-                width={3375}
-                height={1312}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Musikschule Schwieberdingen"
-                src="/logos/Musikschule.png"
-                width={1080}
-                height={1080}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Musikverein Kleinglattbach"
-                src="/logos/MV-Kleinglattbach.jpg"
-                width={640}
-                height={214}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Musikverein Münchingen"
-                src="/logos/MV-Münchingen.webp"
-                width={350}
-                height={190}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Musikverein Unterriexingen"
-                src="/logos/MV-Unterriexingen.png"
-                width={143}
-                height={55}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Musikverein Ditzingen"
-                src="/logos/MV-Ditzingen.gif"
-                width={591}
-                height={591}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="Musikverein Schwieberdingen"
-                src="/logos/MV-Schwieberdingen.png"
-                width={500}
-                height={141}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-          <div className="flex transform items-center justify-center rounded bg-white p-4 shadow-md transition-transform md:hover:scale-105">
-            <Link href="/programm">
-              <Image
-                alt="TanzTraum"
-                src="/logos/tanz_raum.jpg"
-                width={812}
-                height={257}
-                style={{ objectFit: "contain" }}
-              ></Image>
-            </Link>
-          </div>
-        </div>
-        <div className="mx-auto mt-4 max-w-4xl text-center">
-          <Link
-            href="/programm"
-            className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-          >
-            Das komplette Programm
-          </Link>
-        </div>
-      </section>
-
-      <section className="border-t bg-white p-4 text-center md:p-6">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-2 text-lg">Über 30 Gruppen</h2>
-          <h3 className="mb-6 text-xl font-bold">Großer Jubiläums Festumzug</h3>
-
-          <div className="mb-4 flex flex-col items-center gap-4 md:flex-row">
-            <div className="flex-1">
-              <figure className="transform transition-transform md:hover:scale-105">
-                <Link href="https://www.mv-schwieberdingen.de" target="_blank">
-                  <Image
-                    alt="Die Oldies beim Festumzug"
-                    src="/festumzug_oldies.jpg"
-                    height={751}
-                    width={500}
-                  ></Image>
-                </Link>
-                <figcaption className="text-sm text-gray-600">
-                  Über 30 Gruppen und Kapellen nehmen am großen Festumzug teil
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex-1 text-justify">
-              <p className="mb-4">
-                Begleitet von über 30 befreundeten <b>Musikvereinen, Gruppen</b>{" "}
-                und begeisterten Zuschauern ziehen wir am <b>Sonntag 11. Mai</b>{" "}
-                durch die Straßen von Schwieberdingen, um das{" "}
-                <b>100-jährige Bestehen des Musikverein Schwieberdingen</b> zu
-                feiern. Freuen Sie sich auf einen{" "}
-                <b>
-                  unvergesslichen Tag voller Musik, Freude und Gemeinschaft!
-                </b>
-              </p>
-              <p>
-                Der Umzug endet am <b>großen Festzelt am Bahnhof</b>, wo ein
-                abwechslungsreiches Programm mit weiteren musikalischen
-                Höhepunkten und geselligem Beisammensein auf Sie wartet.
-                Außerdem findet die{" "}
-                <b>Bekanntgabe der Ergebnisse des Wertungsspiels</b> im
-                Anschluss an den großen Festzug im Festzelt statt. Feiern Sie
-                mit uns <b>dieses unvergessliche Jubiläum!</b>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="mx-auto mt-4 max-w-4xl text-center">
-          <Link
-            href="/festumzug"
-            className="inline-block w-full rounded bg-orange-500 px-6 py-2 text-center font-freeman text-white hover:bg-orange-600 md:w-auto"
-          >
-            Informationen zum Festumzug
-          </Link>
         </div>
       </section>
     </main>

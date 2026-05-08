@@ -11,16 +11,17 @@ export default function Navigation() {
   const isActivePath = (path: string) => path === pathname;
 
   const menuItems = [
-    { label: "Programm", href: "/programm", target: "_self" },
-    { label: "Wertungsspiel", href: "/wertungsspiel", target: "_self" },
-    { label: "Festumzug", href: "/festumzug", target: "_self" },
     {
-      label: "Tickets",
-      href: "https://www.mv-schwieberdingen.de/tickets",
+      label: "Blasmusik-Kreisverband Ludwigsburg",
+      href: "https://www.bvbw-ludwigsburg.de/",
       target: "_blank",
     },
-    { label: "FAQ & Anfahrt", href: "/faq", target: "_self" },
-    { label: "Kontakt & Helfen", href: "/kontakt", target: "_self" },
+    {
+      label: "Musikverein Schwieberdingen",
+      href: "https://mv-schwieberdingen.de/",
+      target: "_blank",
+    },
+    { label: "Impressum", href: "/impressum", target: "_self" },
   ];
 
   return (
