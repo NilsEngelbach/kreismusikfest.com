@@ -65,7 +65,7 @@ export default function Home() {
             </p>
             <p>
               Der Auftakt am Freitagabend stand ganz im Zeichen{" "}
-              <b>mitreißender Brassmusik</b>: Unter dem Motto „Blech X-Plosion"
+              <b>mitreißender Brassmusik</b>: Unter dem Motto &ldquo;Blech X-Plosion&rdquo;
               heizten <b>Druckluft</b> und <b>Fättes Blech</b> dem Publikum
               ordentlich ein. Mit energiegeladenen Rhythmen, präzisem
               Zusammenspiel und humorvoller Bühnenshow sorgten die beiden
@@ -90,7 +90,7 @@ export default function Home() {
               und den Gemeinschaftsgeist der Blasmusikszene in der Region. Dies
               wurde auch im anschließenden <b>Massenchor</b> deutlich: alle
               beteiligten Musikgruppen führten gemeinsam die Auftragskomposition
-              zum Kreismusikfest <b>„Ludwigsburg unitis"</b> auf.
+              zum Kreismusikfest <b>&ldquo;Ludwigsburg unitis&rdquo;</b> auf.
             </p>
             <p>
               Der Blasmusik-Kreisverband Ludwigsburg und der Musikverein
